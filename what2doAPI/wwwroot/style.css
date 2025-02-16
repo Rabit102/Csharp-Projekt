@@ -1,9 +1,13 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: grid;
     place-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #a8c0ff, #eed59e); 
 }
 
 .container {
@@ -24,12 +28,12 @@ body {
     padding: 10px;
     border-radius: 20px;
     width: 60%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .btn-container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     gap: 20px;
     width: 100%;
 }
