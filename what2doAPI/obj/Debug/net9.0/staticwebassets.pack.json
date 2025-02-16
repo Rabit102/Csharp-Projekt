@@ -1,6 +1,22 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\IndexAnime.html",
+      "PackagePath": "staticwebassets\\IndexAnime.html"
+    },
+    {
+      "Id": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\IndexRead.html",
+      "PackagePath": "staticwebassets\\IndexRead.html"
+    },
+    {
+      "Id": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\StyleAnime.css",
+      "PackagePath": "staticwebassets\\StyleAnime.css"
+    },
+    {
+      "Id": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\StyleRead.css",
+      "PackagePath": "staticwebassets\\StyleRead.css"
+    },
+    {
       "Id": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

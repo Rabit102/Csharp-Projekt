@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JNq8Ew2w0YNTVsfN92lXQmYmVNnhaMXu7s0iCo1MSDA=",
+  "Hash": "2IkDTAolDi/ymdWTmnlf0+/XMltDhcn5X13DpjdQqqk=",
   "Source": "what2doAPI",
   "BasePath": "_content/what2doAPI",
   "Mode": "Default",
@@ -16,6 +16,90 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\10n1cg8ycf-5ipweew5fc.gz",
+      "SourceId": "what2doAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/what2doAPI",
+      "RelativePath": "IndexRead#[.{fingerprint=5ipweew5fc}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\IndexRead.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\IndexRead.html"
+    },
+    {
+      "Identity": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\7v75auzhjg-5ipweew5fc.gz",
+      "SourceId": "what2doAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/what2doAPI",
+      "RelativePath": "IndexAnime#[.{fingerprint=5ipweew5fc}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\IndexAnime.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\IndexAnime.html"
+    },
+    {
+      "Identity": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\oa87v2naxt-5ipweew5fc.gz",
+      "SourceId": "what2doAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/what2doAPI",
+      "RelativePath": "StyleRead#[.{fingerprint=5ipweew5fc}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\StyleRead.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\StyleRead.css"
+    },
+    {
+      "Identity": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\r1aua2b7bv-5ipweew5fc.gz",
+      "SourceId": "what2doAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/what2doAPI",
+      "RelativePath": "StyleAnime#[.{fingerprint=5ipweew5fc}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\StyleAnime.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\StyleAnime.css"
+    },
     {
       "Identity": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\ti8w7dk5yg-zyrehkr2ob.gz",
       "SourceId": "what2doAPI",
@@ -38,12 +122,12 @@
       "OriginalItemSpec": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\style.css"
     },
     {
-      "Identity": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\y9sk1xl4vj-by4tc2mgov.gz",
+      "Identity": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\y9sk1xl4vj-w9i72bl04d.gz",
       "SourceId": "what2doAPI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/what2doAPI",
-      "RelativePath": "index#[.{fingerprint=by4tc2mgov}]?.html.gz",
+      "RelativePath": "index#[.{fingerprint=w9i72bl04d}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -52,8 +136,8 @@
       "RelatedAsset": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\index.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "nr8niigpxy",
-      "Integrity": "3VkkQLjhOo2gA8yRByZMfu7Et5JrtA957kxKd6fLUM0=",
+      "Fingerprint": "qtn6nyz6ek",
+      "Integrity": "Hq3+ea3BQfJxcrneHyP1rPHgMSZbkDHAT6PpTTn7qDE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\index.html"
@@ -73,11 +157,53 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "by4tc2mgov",
-      "Integrity": "U/KwJl3QQVcDLGgwA91Yqvfei1ai8EUkQA971neh1cg=",
+      "Fingerprint": "w9i72bl04d",
+      "Integrity": "RPbhnHVByNEhwmP8Woz8etcJx55savNWmd5bAG0sHoU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\IndexAnime.html",
+      "SourceId": "what2doAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\",
+      "BasePath": "_content/what2doAPI",
+      "RelativePath": "IndexAnime#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\IndexAnime.html"
+    },
+    {
+      "Identity": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\IndexRead.html",
+      "SourceId": "what2doAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\",
+      "BasePath": "_content/what2doAPI",
+      "RelativePath": "IndexRead#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\IndexRead.html"
     },
     {
       "Identity": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\style.css",
@@ -99,17 +225,59 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\StyleAnime.css",
+      "SourceId": "what2doAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\",
+      "BasePath": "_content/what2doAPI",
+      "RelativePath": "StyleAnime#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleAnime.css"
+    },
+    {
+      "Identity": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\StyleRead.css",
+      "SourceId": "what2doAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\",
+      "BasePath": "_content/what2doAPI",
+      "RelativePath": "StyleRead#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleRead.css"
     }
   ],
   "Endpoints": [
     {
-      "Route": "index.by4tc2mgov.html",
-      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\y9sk1xl4vj-by4tc2mgov.gz",
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\y9sk1xl4vj-w9i72bl04d.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003831417625"
+          "Quality": "0.003436426117"
         }
       ],
       "ResponseHeaders": [
@@ -119,19 +287,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "260"
+          "Value": "290"
         },
         {
           "Name": "ETag",
-          "Value": "\"3VkkQLjhOo2gA8yRByZMfu7Et5JrtA957kxKd6fLUM0=\""
+          "Value": "\"Hq3+ea3BQfJxcrneHyP1rPHgMSZbkDHAT6PpTTn7qDE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 01:07:07 GMT"
+          "Value": "Sun, 16 Feb 2025 02:34:05 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -147,26 +315,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"U/KwJl3QQVcDLGgwA91Yqvfei1ai8EUkQA971neh1cg=\""
+          "Value": "W/\"RPbhnHVByNEhwmP8Woz8etcJx55savNWmd5bAG0sHoU=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "by4tc2mgov"
-        },
-        {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-U/KwJl3QQVcDLGgwA91Yqvfei1ai8EUkQA971neh1cg="
+          "Value": "sha256-RPbhnHVByNEhwmP8Woz8etcJx55savNWmd5bAG0sHoU="
         }
       ]
     },
     {
-      "Route": "index.by4tc2mgov.html",
+      "Route": "index.html",
       "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -176,7 +336,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "442"
+          "Value": "521"
         },
         {
           "Name": "Content-Type",
@@ -184,11 +344,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"U/KwJl3QQVcDLGgwA91Yqvfei1ai8EUkQA971neh1cg=\""
+          "Value": "\"RPbhnHVByNEhwmP8Woz8etcJx55savNWmd5bAG0sHoU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 01:07:07 GMT"
+          "Value": "Sun, 16 Feb 2025 02:34:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RPbhnHVByNEhwmP8Woz8etcJx55savNWmd5bAG0sHoU="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\y9sk1xl4vj-w9i72bl04d.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "290"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Hq3+ea3BQfJxcrneHyP1rPHgMSZbkDHAT6PpTTn7qDE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:34:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Hq3+ea3BQfJxcrneHyP1rPHgMSZbkDHAT6PpTTn7qDE="
+        }
+      ]
+    },
+    {
+      "Route": "index.w9i72bl04d.html",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\y9sk1xl4vj-w9i72bl04d.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003436426117"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "290"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Hq3+ea3BQfJxcrneHyP1rPHgMSZbkDHAT6PpTTn7qDE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:34:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"RPbhnHVByNEhwmP8Woz8etcJx55savNWmd5bAG0sHoU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w9i72bl04d"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RPbhnHVByNEhwmP8Woz8etcJx55savNWmd5bAG0sHoU="
+        }
+      ]
+    },
+    {
+      "Route": "index.w9i72bl04d.html",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "521"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RPbhnHVByNEhwmP8Woz8etcJx55savNWmd5bAG0sHoU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:34:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -198,7 +503,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "by4tc2mgov"
+          "Value": "w9i72bl04d"
         },
         {
           "Name": "label",
@@ -206,13 +511,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-U/KwJl3QQVcDLGgwA91Yqvfei1ai8EUkQA971neh1cg="
+          "Value": "sha256-RPbhnHVByNEhwmP8Woz8etcJx55savNWmd5bAG0sHoU="
         }
       ]
     },
     {
-      "Route": "index.by4tc2mgov.html.gz",
-      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\y9sk1xl4vj-by4tc2mgov.gz",
+      "Route": "index.w9i72bl04d.html.gz",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\y9sk1xl4vj-w9i72bl04d.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -221,7 +526,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "260"
+          "Value": "290"
         },
         {
           "Name": "Content-Type",
@@ -229,11 +534,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3VkkQLjhOo2gA8yRByZMfu7Et5JrtA957kxKd6fLUM0=\""
+          "Value": "\"Hq3+ea3BQfJxcrneHyP1rPHgMSZbkDHAT6PpTTn7qDE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 01:07:07 GMT"
+          "Value": "Sun, 16 Feb 2025 02:34:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -251,7 +556,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "by4tc2mgov"
+          "Value": "w9i72bl04d"
         },
         {
           "Name": "label",
@@ -259,18 +564,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-3VkkQLjhOo2gA8yRByZMfu7Et5JrtA957kxKd6fLUM0="
+          "Value": "sha256-Hq3+ea3BQfJxcrneHyP1rPHgMSZbkDHAT6PpTTn7qDE="
         }
       ]
     },
     {
-      "Route": "index.html",
-      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\y9sk1xl4vj-by4tc2mgov.gz",
+      "Route": "IndexAnime.5ipweew5fc.html",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\7v75auzhjg-5ipweew5fc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003831417625"
+          "Quality": "1.000000000000"
         }
       ],
       "ResponseHeaders": [
@@ -280,15 +585,176 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "260"
+          "Value": "0"
         },
         {
           "Name": "ETag",
-          "Value": "\"3VkkQLjhOo2gA8yRByZMfu7Et5JrtA957kxKd6fLUM0=\""
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 01:07:07 GMT"
+          "Value": "Sun, 16 Feb 2025 02:35:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "IndexAnime.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "IndexAnime.5ipweew5fc.html",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\IndexAnime.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "IndexAnime.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "IndexAnime.5ipweew5fc.html.gz",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\7v75auzhjg-5ipweew5fc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "IndexAnime.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "IndexAnime.html",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\7v75auzhjg-5ipweew5fc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "1.000000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -308,19 +774,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"U/KwJl3QQVcDLGgwA91Yqvfei1ai8EUkQA971neh1cg=\""
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-U/KwJl3QQVcDLGgwA91Yqvfei1ai8EUkQA971neh1cg="
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     },
     {
-      "Route": "index.html",
-      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\index.html",
+      "Route": "IndexAnime.html",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\IndexAnime.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -329,7 +795,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "442"
+          "Value": "0"
         },
         {
           "Name": "Content-Type",
@@ -337,11 +803,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"U/KwJl3QQVcDLGgwA91Yqvfei1ai8EUkQA971neh1cg=\""
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 01:07:07 GMT"
+          "Value": "Sun, 16 Feb 2025 02:35:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -351,13 +817,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-U/KwJl3QQVcDLGgwA91Yqvfei1ai8EUkQA971neh1cg="
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     },
     {
-      "Route": "index.html.gz",
-      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\y9sk1xl4vj-by4tc2mgov.gz",
+      "Route": "IndexAnime.html.gz",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\7v75auzhjg-5ipweew5fc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -366,7 +832,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "260"
+          "Value": "0"
         },
         {
           "Name": "Content-Type",
@@ -374,11 +840,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3VkkQLjhOo2gA8yRByZMfu7Et5JrtA957kxKd6fLUM0=\""
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 01:07:07 GMT"
+          "Value": "Sun, 16 Feb 2025 02:35:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -396,7 +862,305 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3VkkQLjhOo2gA8yRByZMfu7Et5JrtA957kxKd6fLUM0="
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "IndexRead.5ipweew5fc.html",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\10n1cg8ycf-5ipweew5fc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "1.000000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "IndexRead.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "IndexRead.5ipweew5fc.html",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\IndexRead.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "IndexRead.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "IndexRead.5ipweew5fc.html.gz",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\10n1cg8ycf-5ipweew5fc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "IndexRead.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "IndexRead.html",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\10n1cg8ycf-5ipweew5fc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "1.000000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "IndexRead.html",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\IndexRead.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "IndexRead.html.gz",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\10n1cg8ycf-5ipweew5fc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     },
@@ -425,7 +1189,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 01:44:38 GMT"
+          "Value": "Sun, 16 Feb 2025 02:33:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -478,7 +1242,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 01:44:38 GMT"
+          "Value": "Sun, 16 Feb 2025 02:33:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -515,7 +1279,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 01:44:38 GMT"
+          "Value": "Sun, 16 Feb 2025 02:33:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -562,7 +1326,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 01:44:38 GMT"
+          "Value": "Sun, 16 Feb 2025 02:33:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -623,7 +1387,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 01:44:38 GMT"
+          "Value": "Sun, 16 Feb 2025 02:33:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -668,7 +1432,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 01:44:38 GMT"
+          "Value": "Sun, 16 Feb 2025 02:33:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -695,6 +1459,602 @@
         {
           "Name": "integrity",
           "Value": "sha256-qv1m0bUpWNX+diaZMQ0od+42Bc2EqZlQLsw2Qwg4k24="
+        }
+      ]
+    },
+    {
+      "Route": "StyleAnime.5ipweew5fc.css",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\r1aua2b7bv-5ipweew5fc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "1.000000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "StyleAnime.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "StyleAnime.5ipweew5fc.css",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\StyleAnime.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "StyleAnime.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "StyleAnime.5ipweew5fc.css.gz",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\r1aua2b7bv-5ipweew5fc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "StyleAnime.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "StyleAnime.css",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\r1aua2b7bv-5ipweew5fc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "1.000000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "StyleAnime.css",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\StyleAnime.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "StyleAnime.css.gz",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\r1aua2b7bv-5ipweew5fc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "StyleRead.5ipweew5fc.css",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\oa87v2naxt-5ipweew5fc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "1.000000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "StyleRead.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "StyleRead.5ipweew5fc.css",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\StyleRead.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "StyleRead.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "StyleRead.5ipweew5fc.css.gz",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\oa87v2naxt-5ipweew5fc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "StyleRead.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "StyleRead.css",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\oa87v2naxt-5ipweew5fc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "1.000000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "StyleRead.css",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\wwwroot\\StyleRead.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "StyleRead.css.gz",
+      "AssetFile": "C:\\Users\\Lukas\\VSC Projects\\C#GitProjekt\\Csharp-Projekt\\what2doAPI\\obj\\Debug\\net9.0\\compressed\\oa87v2naxt-5ipweew5fc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 02:35:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     }
