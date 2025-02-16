@@ -3,14 +3,13 @@ body {
     display: grid;
     place-items: center;
     height: 100vh;
-    margin: 0;
     background-color: #f4f4f4;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto auto 1fr;
     gap: 20px;
     width: 60%;
     max-width: 600px;
@@ -18,17 +17,21 @@ body {
 }
 
 .lable {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
-    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.74);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 60%;
+    margin: 0 auto; 
 }
 
 .btn-container {
     display: flex;
-    flex-direction: row; /* Sicherstellen, dass die Buttons horizontal ausgerichtet sind */
-    justify-content: space-between;
+    justify-content: center; 
     gap: 20px;
-    width: 100%; /* Sicherstellen, dass die Container-Breite richtig ist */
+    width: 100%;
 }
 
 .btn {
@@ -40,7 +43,7 @@ body {
     color: white;
     border: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.6s;
 }
 
 .btn:hover {
