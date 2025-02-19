@@ -27,5 +27,12 @@ namespace Launcher
         {
             ((Controller)this.DataContext).Open();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window1 wi = new Window1();
+            wi.Show();
+            this.Close();
+        }
     }
 }

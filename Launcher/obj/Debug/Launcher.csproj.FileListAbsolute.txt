@@ -14,3 +14,5 @@ C:\Users\OnoprienkoKirill\Source\Repos\Csharp-Projekt\Launcher\obj\Debug\Launche
 C:\Users\OnoprienkoKirill\Source\Repos\Csharp-Projekt\Launcher\obj\Debug\Launcher.csproj.CoreCompileInputs.cache
 C:\Users\OnoprienkoKirill\Source\Repos\Csharp-Projekt\Launcher\obj\Debug\Launcher.exe
 C:\Users\OnoprienkoKirill\Source\Repos\Csharp-Projekt\Launcher\obj\Debug\Launcher.pdb
+C:\Users\OnoprienkoKirill\Source\Repos\Csharp-Projekt\Launcher\obj\Debug\Window1.g.cs
+C:\Users\OnoprienkoKirill\Source\Repos\Csharp-Projekt\Launcher\obj\Debug\Window1.baml
