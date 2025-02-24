@@ -1,0 +1,57 @@
+﻿<Window x:Class="Launcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Launcher"
+        mc:Ignorable="d"
+        Title="Launcher" Height="700" Width="450" Background="Bisque">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Verdana"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Background" Value="LemonChiffon"/>
+            <Setter Property="Margin" Value="10"/>
+
+        </Style>
+
+        <Style x:Key="textBlockDesign" TargetType="{x:Type TextBlock}">
+
+            <Setter Property="FontSize" Value="35"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property= "Foreground" Value="Firebrick"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+
+        </Style>
+
+    </Window.Resources>
+
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="What2DoToday" Grid.ColumnSpan="4" Grid.RowSpan="2" Style="{StaticResource textBlockDesign}"/>
+
+        <Button Grid.Row="2" Grid.ColumnSpan="4" Content="Spielen?" Click="Button_Click"/>
+        <Button Grid.Row="3" Grid.ColumnSpan="4" Content="Was Sonstiges?" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
