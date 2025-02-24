@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|c:\\users\\cleme\\desktop\\school\\csharp\\progs\\csharp-projekt\\unity\\platformer game\\assets\\hero knight - pixel art\\demo\\heroknight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\hero knight - pixel art\\demo\\heroknight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|c:\\users\\cleme\\desktop\\school\\csharp\\progs\\csharp-projekt\\unity\\platformer game\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HeroKnight.cs",
+              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Hero Knight - Pixel Art\\Demo\\HeroKnight.cs",
+              "RelativeDocumentMoniker": "Assets\\Hero Knight - Pixel Art\\Demo\\HeroKnight.cs",
+              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Hero Knight - Pixel Art\\Demo\\HeroKnight.cs",
+              "RelativeToolTip": "Assets\\Hero Knight - Pixel Art\\Demo\\HeroKnight.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAADgv0YAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T23:25:33.965Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "5112d369-9429-4a39-a1de-e8c88d13c2f2",
+        "Display": 0,
+        "X": 970,
+        "Y": 348,
+        "Width": 1547,
+        "Height": 831,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T23:17:41.084Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
