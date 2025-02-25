@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rigidbody;
-    float speed = 4.0f;
+    float speed = 4.0f; // Geschwindigkeit der Bewegungen
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float directionX = Input.GetAxis("Horizontal");
+        float directionX = Input.GetAxis("Horizontal"); // Steuerungseingaben
 
         rigidbody.linearVelocity = new Vector2(directionX * speed , rigidbody.linearVelocity.y);
     }
