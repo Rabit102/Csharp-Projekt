@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GroundSensor : MonoBehaviour
+public class SensorCode : MonoBehaviour
 {
 
     private int m_ColCount = 0;
@@ -39,5 +39,4 @@ public class GroundSensor : MonoBehaviour
     {
         m_DisableTimer = duration;
     }
-    
 }

@@ -4,15 +4,26 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rigidbody;
     private Animator animator;
-    private GroundSensor groundSensor;
+    private SensorCode groundSensor;
+    private SensorCode wallSensorRB;
+    private SensorCode wallSensorRT;
+    private SensorCode wallSensorLB;
+    private SensorCode wallSensorLT;
 
+    [SerializeField] float rollingForce = 6.0f;// Rollkraft
+    [SerializeField] float jumpForce = 7.5f; // Sprungkraft
+    [SerializeField] float speed = 4.0f; // Geschwindigkeit der Bewegungen
 
-    float jumpForce = 7.5f; // Sprungkraft
-    float speed = 4.0f; // Geschwindigkeit der Bewegungen
-    float delaytoIdle = 0.0f; // Verzögerung der Bewegungen
-    int direction = 1; // Richtung der Bewegungen
-    bool grounded = true; // Bodenkontakt
+    private bool rolling = false; // Rollen
+    private bool grounded = false; // Bodenkontakt
 
+    private float delaytoIdle = 0.0f; // Verzögerung der Bewegungen
+    private float roltime = 8.0f / 14.0f; // Rollzeit
+    private float rollCurrentTime; // Aktuelle Rollzeit
+    private float betweenAttack = 0.0f; // Zeit zwischen den Angriffen
+
+    private int currentAttack = 0; // Aktueller Angriff
+    private int direction = 1; // Richtung der Bewegungen
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,32 +31,41 @@ public class PlayerMovement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody2D>();
-        groundSensor = GetComponentInChildren<GroundSensor>();
+        groundSensor = GetComponentInChildren<SensorCode>();
+        wallSensorRB = GetComponentInChildren<SensorCode>();
+        wallSensorRT = GetComponentInChildren<SensorCode>();
+        wallSensorLB = GetComponentInChildren<SensorCode>();
+        wallSensorLT = GetComponentInChildren<SensorCode>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("außerhalb f "  +groundSensor.State());
-        if(!grounded && groundSensor.State())
+        betweenAttack += Time.deltaTime;
+
+        if (rolling)
         {
-            Debug.Log("innerhalb 1" + groundSensor.State());
+            rollCurrentTime += Time.deltaTime;
+        }
+
+        if(rollCurrentTime > roltime)
+        {
+            rolling = false;
+        }
+
+        if (!grounded && groundSensor.State())
+        {
             grounded = true;
             animator.SetBool("Grounded", grounded);
         }
 
         if (grounded && !groundSensor.State())
         {
-            Debug.Log("innerhalb 2 " + groundSensor.State());
             grounded = false;
             animator.SetBool("Grounded", grounded);
         }
-
-
+        
         float directionX = Input.GetAxis("Horizontal"); // Steuerungseingaben
-        animator.SetFloat("AirSpeedY",rigidbody.linearVelocity.x);
-
-        rigidbody.linearVelocity = new Vector2(directionX * speed, rigidbody.linearVelocity.y); //Bewegung
 
         if (directionX > 0)
         {
@@ -58,10 +78,61 @@ public class PlayerMovement : MonoBehaviour
             direction = -1;
         }
 
-        if (Input.GetKeyDown("e"))
+        if (!rolling)
         {
-            animator.SetBool("noBlood", true);
+            rigidbody.linearVelocity = new Vector2(directionX * speed, rigidbody.linearVelocity.y);
+        }
+
+        //Bewegung
+        rigidbody.linearVelocity = new Vector2(directionX * speed, rigidbody.linearVelocity.y); 
+
+        animator.SetFloat("AirSpeedY", rigidbody.linearVelocity.y);
+
+        if (Input.GetKeyDown("e") && !rolling) // Tod
+        {
+            animator.SetBool("noBlood", false);
             animator.SetTrigger("Death");
+        }
+
+        else if (Input.GetKeyDown("q") && !rolling) // Schaden
+        {
+            animator.SetTrigger("Hurt");
+        }
+
+        else if (Input.GetMouseButtonDown(0) && betweenAttack > 0.25f && !rolling) // Angreifen
+        {
+            currentAttack++;
+
+            if (currentAttack > 3)
+            {
+                currentAttack = 1;
+            }
+
+            if(betweenAttack > 1.0f)
+            {
+                currentAttack = 1;
+            }
+            
+            animator.SetTrigger("Attack" + currentAttack);
+
+            betweenAttack = 0.0f;
+        }
+
+        else if (Input.GetMouseButtonDown(1) && !rolling) // Blocken
+        {
+            animator.SetTrigger("Block");
+            animator.SetBool("IdleBlock", true);
+        }
+        else if (Input.GetMouseButtonDown(1))
+        {
+            animator.SetBool("IdleBlock", false);
+        }
+
+        else if (Input.GetKeyDown("left shift") && !rolling)
+        {
+            rolling = true;
+            animator.SetTrigger("Roll");
+            rigidbody.linearVelocity = new Vector2(direction * rollingForce, rigidbody.linearVelocity.y);
         }
 
         else if (Input.GetKeyDown("space") && grounded)
@@ -71,7 +142,6 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Grounded", grounded);
             rigidbody.linearVelocity = new Vector2(rigidbody.linearVelocity.x, jumpForce);
             groundSensor.Disable(0.2f);
-
         }
 
         //laufanimation
@@ -90,6 +160,5 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetInteger("AnimState", 0);
             }
         }
-    }
-
-}
+        }
+        }
