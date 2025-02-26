@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     float speed = 4.0f; // Geschwindigkeit der Bewegungen
     float delaytoIdle = 0.0f; // Verzögerung der Bewegungen
     int direction = 1; // Richtung der Bewegungen
-    bool isGrounded = false; // Bodenkontakt
+    bool grounded = true; // Bodenkontakt
 
 
 
@@ -26,21 +26,24 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if(!isGrounded && groundSensor.State())
+        Debug.Log("außerhalb f "  +groundSensor.State());
+        if(!grounded && groundSensor.State())
         {
-            isGrounded = true;
-            animator.SetBool("Grounded", isGrounded);
+            Debug.Log("innerhalb 1" + groundSensor.State());
+            grounded = true;
+            animator.SetBool("Grounded", grounded);
         }
 
-        if (isGrounded && !groundSensor.State())
+        if (grounded && !groundSensor.State())
         {
-            isGrounded = false;
-            animator.SetBool("Grounded", isGrounded);
+            Debug.Log("innerhalb 2 " + groundSensor.State());
+            grounded = false;
+            animator.SetBool("Grounded", grounded);
         }
 
 
         float directionX = Input.GetAxis("Horizontal"); // Steuerungseingaben
+        animator.SetFloat("AirSpeedY",rigidbody.linearVelocity.x);
 
         rigidbody.linearVelocity = new Vector2(directionX * speed, rigidbody.linearVelocity.y); //Bewegung
 
@@ -61,23 +64,22 @@ public class PlayerMovement : MonoBehaviour
             animator.SetTrigger("Death");
         }
 
-        else if (Input.GetKeyDown("space") && isGrounded)
+        else if (Input.GetKeyDown("space") && grounded)
         {
             animator.SetTrigger("Jump");
-            isGrounded = false;
-            animator.SetBool("Grounded", isGrounded);
+            grounded = false;
+            animator.SetBool("Grounded", grounded);
             rigidbody.linearVelocity = new Vector2(rigidbody.linearVelocity.x, jumpForce);
             groundSensor.Disable(0.2f);
 
         }
 
-
         //laufanimation
         else if (Mathf.Abs(directionX) > 0.01f)
         {
             delaytoIdle = 0.5f;
-            animator.SetBool("isRunning", true);
-            Debug.Log(animator.GetInteger("AnimState"));
+            animator.SetInteger("AnimState", 1);
+            // Debug.Log(animator.GetInteger("AnimState"));
         }
         //steht still animation
         else
