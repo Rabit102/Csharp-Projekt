@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
     private int currentAttack = 0; // Aktueller Angriff
     private int direction = 1; // Richtung der Bewegungen
+    private bool extrajump;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -63,6 +65,10 @@ public class PlayerMovement : MonoBehaviour
         {
             grounded = false;
             animator.SetBool("Grounded", grounded);
+        }
+        if (!wallSensorRT.State() && !wallSensorRB.State())
+        {
+            Debug.Log("Wall");
         }
         
         float directionX = Input.GetAxis("Horizontal"); // Steuerungseingaben
@@ -137,12 +143,16 @@ public class PlayerMovement : MonoBehaviour
 
         else if (Input.GetKeyDown("space") && grounded)
         {
-            animator.SetTrigger("Jump");
-            grounded = false;
-            animator.SetBool("Grounded", grounded);
-            rigidbody.linearVelocity = new Vector2(rigidbody.linearVelocity.x, jumpForce);
-            groundSensor.Disable(0.2f);
+            jump();
+            extrajump = true;
         }
+
+        else if(Input.GetKeyDown("space") && !grounded && extrajump)
+        {
+            jump();
+            extrajump = false;
+        }
+        
 
         //laufanimation
         else if (Mathf.Abs(directionX) > 0.01f)
@@ -161,4 +171,13 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         }
-        }
+
+    private void jump()
+    {
+        animator.SetTrigger("Jump");
+        grounded = false;
+        animator.SetBool("Grounded", grounded);
+        rigidbody.linearVelocity = new Vector2(rigidbody.linearVelocity.x, jumpForce);
+        groundSensor.Disable(0.2f);
+    }
+}
