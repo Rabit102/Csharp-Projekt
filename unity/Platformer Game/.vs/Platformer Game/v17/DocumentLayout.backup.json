@@ -1,22 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\",
+  "WorkspaceRootPath": "C:\\Users\\SattlerClemens\\Documents\\GitHub\\Csharp-Projekt\\unity\\Platformer Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|c:\\users\\sattlerclemens\\csharp-projekt\\unity\\platformer game\\assets\\scripts\\sensorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sensorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|c:\\users\\sattlerclemens\\csharp-projekt\\unity\\platformer game\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|c:\\users\\sattlerclemens\\csharp-projekt\\unity\\platformer game\\assets\\hero knight - pixel art\\demo\\heroknight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\hero knight - pixel art\\demo\\heroknight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|c:\\users\\sattlerclemens\\csharp-projekt\\unity\\platformer game\\assets\\scripts\\cameracode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|c:\\users\\sattlerclemens\\documents\\github\\csharp-projekt\\unity\\platformer game\\assets\\scripts\\collider2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\collider2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SensorCode.cs",
-              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\SensorCode.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SensorCode.cs",
-              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\SensorCode.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SensorCode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Collider2D.cs",
+              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Documents\\GitHub\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\Collider2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Collider2D.cs",
+              "ToolTip": "C:\\Users\\SattlerClemens\\Documents\\GitHub\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\Collider2D.cs*",
+              "RelativeToolTip": "Assets\\Scripts\\Collider2D.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T14:44:06.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HeroKnight.cs",
-              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Hero Knight - Pixel Art\\Demo\\HeroKnight.cs",
-              "RelativeDocumentMoniker": "Assets\\Hero Knight - Pixel Art\\Demo\\HeroKnight.cs",
-              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Hero Knight - Pixel Art\\Demo\\HeroKnight.cs",
-              "RelativeToolTip": "Assets\\Hero Knight - Pixel Art\\Demo\\HeroKnight.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAIwLEAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T14:34:34.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\PlayerMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
-              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\PlayerMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAwEQAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T14:01:20.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CameraCode.cs",
-              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\CameraCode.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraCode.cs",
-              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\CameraCode.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CameraCode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T12:44:14.482Z",
+              "WhenOpened": "2025-02-28T07:41:48.816Z",
               "EditorCaption": ""
             }
           ]
