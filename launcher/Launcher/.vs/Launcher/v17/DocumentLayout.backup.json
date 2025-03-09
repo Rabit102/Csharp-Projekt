@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\OnoprienkoKirill\\git\\Csharp-Projekt\\launcher\\Launcher\\",
+  "WorkspaceRootPath": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\launcher\\Launcher\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|c:\\users\\onoprienkokirill\\git\\csharp-projekt\\launcher\\launcher\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|c:\\users\\onoprienkokirill\\git\\csharp-projekt\\launcher\\launcher\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\launcher\\Launcher\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|c:\\users\\onoprienkokirill\\git\\csharp-projekt\\launcher\\launcher\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|c:\\users\\cleme\\desktop\\school\\csharp\\progs\\csharp-projekt\\launcher\\launcher\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\launcher\\Launcher\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|solutionrelative:window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|c:\\users\\onoprienkokirill\\git\\csharp-projekt\\launcher\\launcher\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\launcher\\Launcher\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|solutionrelative:controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -29,37 +29,39 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Window1.xaml",
-              "DocumentMoniker": "C:\\Users\\OnoprienkoKirill\\git\\Csharp-Projekt\\launcher\\Launcher\\Window1.xaml",
+              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\launcher\\Launcher\\Window1.xaml",
               "RelativeDocumentMoniker": "Window1.xaml",
-              "ToolTip": "C:\\Users\\OnoprienkoKirill\\git\\Csharp-Projekt\\launcher\\Launcher\\Window1.xaml",
+              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\launcher\\Launcher\\Window1.xaml",
               "RelativeToolTip": "Window1.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T10:57:16.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T10:57:16.479Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Controller.cs",
-              "DocumentMoniker": "C:\\Users\\OnoprienkoKirill\\git\\Csharp-Projekt\\launcher\\Launcher\\Controller.cs",
+              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\launcher\\Launcher\\Controller.cs",
               "RelativeDocumentMoniker": "Controller.cs",
-              "ToolTip": "C:\\Users\\OnoprienkoKirill\\git\\Csharp-Projekt\\launcher\\Launcher\\Controller.cs",
+              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\launcher\\Launcher\\Controller.cs",
               "RelativeToolTip": "Controller.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T10:53:05.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T10:53:05.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\OnoprienkoKirill\\git\\Csharp-Projekt\\launcher\\Launcher\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\launcher\\Launcher\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\OnoprienkoKirill\\git\\Csharp-Projekt\\launcher\\Launcher\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\launcher\\Launcher\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-24T10:51:42.866Z",
@@ -67,13 +69,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\OnoprienkoKirill\\git\\Csharp-Projekt\\launcher\\Launcher\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\launcher\\Launcher\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\OnoprienkoKirill\\git\\Csharp-Projekt\\launcher\\Launcher\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\launcher\\Launcher\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwCQAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T10:51:42.777Z",
               "EditorCaption": ""

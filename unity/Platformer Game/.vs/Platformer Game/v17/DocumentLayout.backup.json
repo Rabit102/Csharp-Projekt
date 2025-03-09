@@ -1,10 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SattlerClemens\\Documents\\GitHub\\Csharp-Projekt\\unity\\Platformer Game\\",
+  "WorkspaceRootPath": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|c:\\users\\sattlerclemens\\documents\\github\\csharp-projekt\\unity\\platformer game\\assets\\scripts\\collider2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\collider2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\healthcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\touchdisappearing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\touchdisappearing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\disappearobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\disappearobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|c:\\users\\cleme\\desktop\\school\\csharp\\progs\\csharp-projekt\\unity\\platformer game\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|c:\\users\\cleme\\desktop\\school\\csharp\\progs\\csharp-projekt\\unity\\platformer game\\assets\\scripts\\jumpitemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jumpitemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\speeditemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\speeditemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\audiocode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiocode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +38,100 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JumpItemCode.cs",
+              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\JumpItemCode.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\JumpItemCode.cs",
+              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\JumpItemCode.cs",
+              "RelativeToolTip": "Assets\\Scripts\\JumpItemCode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T13:51:12.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAASwNsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T13:42:23.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SpeedItemCode.cs",
+              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\SpeedItemCode.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpeedItemCode.cs",
+              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\SpeedItemCode.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpeedItemCode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T13:40:24.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TouchDisappearing.cs",
+              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\TouchDisappearing.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TouchDisappearing.cs",
+              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\TouchDisappearing.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TouchDisappearing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T10:37:45.357Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Collider2D.cs",
-              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Documents\\GitHub\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\Collider2D.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Collider2D.cs",
-              "ToolTip": "C:\\Users\\SattlerClemens\\Documents\\GitHub\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\Collider2D.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\Collider2D.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Title": "HealthCode.cs",
+              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HealthCode.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthCode.cs",
+              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HealthCode.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HealthCode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T07:41:48.816Z",
+              "WhenOpened": "2025-03-05T21:03:47.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AudioCode.cs",
+              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\AudioCode.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AudioCode.cs",
+              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\AudioCode.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AudioCode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T20:50:40.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DisappearObject.cs",
+              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\DisappearObject.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DisappearObject.cs",
+              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\DisappearObject.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DisappearObject.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T21:40:25.506Z",
               "EditorCaption": ""
             }
           ]

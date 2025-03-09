@@ -39,3 +39,6 @@ C:\Users\Lukas\VSC Projects\C#GitProjekt\Csharp-Projekt\what2doAPI\obj\Debug\net
 C:\Users\Lukas\VSC Projects\C#GitProjekt\Csharp-Projekt\what2doAPI\obj\Debug\net9.0\compressed\10n1cg8ycf-5ipweew5fc.gz
 C:\Users\Lukas\VSC Projects\C#GitProjekt\Csharp-Projekt\what2doAPI\obj\Debug\net9.0\compressed\r1aua2b7bv-5ipweew5fc.gz
 C:\Users\Lukas\VSC Projects\C#GitProjekt\Csharp-Projekt\what2doAPI\obj\Debug\net9.0\compressed\oa87v2naxt-5ipweew5fc.gz
+C:\Users\cleme\Desktop\School\Csharp\Progs\Csharp-Projekt\what2doAPI\obj\Debug\net9.0\what2doAPI.dll
+C:\Users\cleme\Desktop\School\Csharp\Progs\Csharp-Projekt\what2doAPI\obj\Debug\net9.0\refint\what2doAPI.dll
+C:\Users\cleme\Desktop\School\Csharp\Progs\Csharp-Projekt\what2doAPI\obj\Debug\net9.0\what2doAPI.pdb

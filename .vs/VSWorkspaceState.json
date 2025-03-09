@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\launcher"
+    "\\launcher",
+    "\\launcher\\Launcher",
+    "\\what2doAPI"
   ],
-  "SelectedNode": "\\launcher",
+  "SelectedNode": "\\launcher\\Launcher\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

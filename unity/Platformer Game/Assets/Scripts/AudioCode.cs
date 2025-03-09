@@ -2,15 +2,18 @@ using UnityEngine;
 
 public class AudioCode : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    public static AudioCode instance { get; private set; }
+    private AudioSource audioSource;
+
+    private void Awake()
     {
-        
+        instance = this;
+        audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlaySound(AudioClip clip)
     {
-        
+        audioSource.PlayOneShot(clip);
     }
 }

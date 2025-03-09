@@ -94,6 +94,100 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0f71de37d189f14b861880a6008e50d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2831451016861639329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 891763016086969488}
+  - component: {fileID: 8659013958639221535}
+  - component: {fileID: 7518266848031812379}
+  - component: {fileID: 5510013735679001822}
+  m_Layer: 0
+  m_Name: GroundSensorR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &891763016086969488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2831451016861639329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.715, y: 0.007, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7911694575923540555}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &8659013958639221535
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2831451016861639329}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.399701, y: 0.062873214}
+  m_Radius: 0.037425786
+--- !u!114 &7518266848031812379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2831451016861639329}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2a8bdc7f41b704693ad497097f30dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5510013735679001822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2831451016861639329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f71de37d189f14b861880a6008e50d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4332061890669741906
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,6 +223,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8523306508465096252}
+  - {fileID: 891763016086969488}
   - {fileID: 7963605664777870569}
   - {fileID: 4190570915324625974}
   - {fileID: 2565056230487077226}
@@ -200,7 +295,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 46122e3dfb5cb30409b01ee846686f2e, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -278,6 +373,13 @@ MonoBehaviour:
   rollingForce: 6
   jumpForce: 7.5
   speed: 4
+  live: 4
+  Maxlive: 4
+  swordSound: {fileID: 8300000, guid: 8084f502a975774469d31b09176a7162, type: 3}
+  deathSound: {fileID: 8300000, guid: a2f443c6e1e212e47bf327b26c00a31a, type: 3}
+  hurtSound: {fileID: 8300000, guid: dd02487337b039f4cb3896fc30b1f9f9, type: 3}
+  blockSound: {fileID: 8300000, guid: 2d662875bfc441648bd8a183343da871, type: 3}
+  jumpSound: {fileID: 8300000, guid: 8c72166cadb4607498d5f6b6f2ddb3db, type: 3}
 --- !u!95 &5874180141107968041
 Animator:
   serializedVersion: 7
@@ -595,7 +697,7 @@ GameObject:
   - component: {fileID: 7530005286601789895}
   - component: {fileID: 2392198752716657977}
   m_Layer: 0
-  m_Name: GroundSensor
+  m_Name: GroundSensorL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -610,7 +712,7 @@ Transform:
   m_GameObject: {fileID: 6723677564513715954}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.418, y: 0.007, z: 0}
+  m_LocalPosition: {x: 0.008, y: 0.007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
