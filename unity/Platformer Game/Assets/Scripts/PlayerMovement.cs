@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private SensorCode wallSensorLB;
     private SensorCode wallSensorLT;
 
-    [SerializeField] float rollingForce = 6.0f;// Rollkraft
+    [SerializeField] float rollingForce = 12.0f;// Rollkraft
     [SerializeField] float jumpForce = 7.5f; // Sprungkraft
     [SerializeField] float speed = 4.0f; // Geschwindigkeit der Bewegungen
     [SerializeField] public int live = 4; // Leben
@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         betweenAttack += Time.deltaTime;
-
+        Crawl();
         if (rolling)
         {
             rollCurrentTime += Time.deltaTime;
@@ -70,6 +70,8 @@ public class PlayerMovement : MonoBehaviour
         if (rollCurrentTime > roltime)
         { 
             rolling = false;
+            rollCurrentTime = 0;
+            Crawl();
         }
 
         //check ob der Spieler auf dem Boden ist
@@ -87,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (wallSensorRT.State() && wallSensorRB.State())
         {
-            Debug.Log("Wall");
+            //Debug.Log("Wall");
         }
         
         float directionX = Input.GetAxis("Horizontal"); // Steuerungseingaben
@@ -197,7 +199,8 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetInteger("AnimState", 0);
             }
         }
-        }
+
+    }
     private void jump()
     {
         AudioCode.instance.PlaySound(jumpSound);
@@ -239,14 +242,21 @@ public class PlayerMovement : MonoBehaviour
     {
         if (wallSensorLT.State() || wallSensorRT.State())
         {
+            boxCollider.autoTiling = true;
             crawling = true;
-            animator.SetTrigger("Crawl");
         }
         else
         {
             crawling = false;
-            boxCollider.size = new Vector2(sizeX, sizeY);
+            Debug.Log("End Crawling");
+            boxCollider.autoTiling = true;
         }
         animator.SetBool("Crawling", crawling);
+    }
+
+    private bool isAbove()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 0.5f);
+        return hit.collider != null;
     }
 }
