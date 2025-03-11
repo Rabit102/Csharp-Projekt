@@ -319,7 +319,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.003671527, y: 0.66565037}
+  m_Offset: {x: 0.003671527, y: 0.6910617}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -329,7 +329,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.74653363, y: 1.2182693}
+  m_Size: {x: 0.75, y: 1.2}
   m_EdgeRadius: 0
 --- !u!50 &632273938984899703
 Rigidbody2D:
@@ -370,11 +370,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9340d57edaac7f45b46497fb75ba6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthCode: {fileID: 0}
   rollingForce: 6
   jumpForce: 7.5
   speed: 4
   live: 4
   Maxlive: 4
+  coins: 0
   swordSound: {fileID: 8300000, guid: 8084f502a975774469d31b09176a7162, type: 3}
   deathSound: {fileID: 8300000, guid: a2f443c6e1e212e47bf327b26c00a31a, type: 3}
   hurtSound: {fileID: 8300000, guid: dd02487337b039f4cb3896fc30b1f9f9, type: 3}

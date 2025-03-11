@@ -13,12 +13,14 @@ public class PlayerMovement : MonoBehaviour
     private SensorCode wallSensorRT;
     private SensorCode wallSensorLB;
     private SensorCode wallSensorLT;
+    public HealthbarCode healthCode;
 
     [SerializeField] float rollingForce = 12.0f;// Rollkraft
     [SerializeField] float jumpForce = 7.5f; // Sprungkraft
     [SerializeField] float speed = 4.0f; // Geschwindigkeit der Bewegungen
     [SerializeField] public int live = 4; // Leben
     [SerializeField] public int Maxlive = 4; // Maximale Leben
+    [SerializeField] public int coins = 0; // Münzen
     [SerializeField] private AudioClip swordSound; // Schwertklang
     [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioClip hurtSound;
@@ -33,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     private float sizeY = 1.2f; // Größe des Spielers
     private float delaytoIdle = 0.0f; // Verzögerung der Bewegungen
     private float roltime = 8.0f / 14.0f; // Rollzeit
-    [SerializeField] private float rollCurrentTime; // Aktuelle Rollzeit
+    private float rollCurrentTime; // Aktuelle Rollzeit
     private float betweenAttack = 0.0f; // Zeit zwischen den Angriffen
 
     private int currentAttack = 0; // Aktueller Angriff
@@ -122,13 +124,6 @@ public class PlayerMovement : MonoBehaviour
             animator.SetTrigger("Death");
         }
 
-        else if (Input.GetKeyDown("q") && !rolling) // Schaden
-        {
-            AudioCode.instance.PlaySound(hurtSound);
-            animator.SetTrigger("Hurt");
-            live--;
-            speed = 4.0f;
-        }
 
         else if (Input.GetMouseButtonDown(0) && betweenAttack > 0.25f && !rolling) // Angreifen
         {
@@ -237,6 +232,15 @@ public class PlayerMovement : MonoBehaviour
         jumpForce += addedJumpForce;
     }
 
+     public void hurt() // Schaden
+     {
+        AudioCode.instance.PlaySound(hurtSound);
+        animator.SetTrigger("Hurt");
+        live--;
+        speed = 4.0f;
+        healthCode.HealthUpdate(live);
+     }
+
 
     public void Crawl()
     {
@@ -248,15 +252,8 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             crawling = false;
-            Debug.Log("End Crawling");
             boxCollider.autoTiling = true;
         }
         animator.SetBool("Crawling", crawling);
-    }
-
-    private bool isAbove()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 0.5f);
-        return hit.collider != null;
     }
 }
