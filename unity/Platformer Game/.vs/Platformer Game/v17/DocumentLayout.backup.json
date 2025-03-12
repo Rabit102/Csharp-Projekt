@@ -1,61 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\",
+  "WorkspaceRootPath": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\trapcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\trapcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\coinitemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coinitemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\healingcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healingcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|c:\\users\\sattlerclemens\\csharp-projekt\\unity\\platformer game\\assets\\scripts\\enemycode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemycode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\healingcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healingcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\touchdisappearing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\touchdisappearing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\healthbarcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthbarcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\trapcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\trapcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\coinitemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coinitemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cleme\\Spiele\\Breakout\\Assets\\Code\\BallCode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\healthbarcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthbarcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\sensorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\sensorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sensorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\audiocode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\audiocode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiocode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\jumpitemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\jumpitemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jumpitemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\speeditemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\speeditemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\speeditemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\touchdisappearing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\touchdisappearing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\disappearobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\disappearobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\disappearobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HealthCode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\HealthCode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,69 +65,77 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemyCode.cs",
+              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\EnemyCode.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyCode.cs",
+              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\EnemyCode.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyCode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T08:16:19.828Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "TrapCode.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\TrapCode.cs",
+              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\TrapCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TrapCode.cs",
-              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\TrapCode.cs",
+              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\TrapCode.cs",
               "RelativeToolTip": "Assets\\Scripts\\TrapCode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T20:29:19.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Counter.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\Counter.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Counter.cs",
-              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\Counter.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Counter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T20:02:45.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BallCode.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Spiele\\Breakout\\Assets\\Code\\BallCode.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Spiele\\Breakout\\Assets\\Code\\BallCode.cs",
-              "ToolTip": "C:\\Users\\cleme\\Spiele\\Breakout\\Assets\\Code\\BallCode.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Spiele\\Breakout\\Assets\\Code\\BallCode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T19:54:47.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T20:29:19.949Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Counter.cs",
+              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\Counter.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Counter.cs",
+              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\Counter.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Counter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T20:02:45.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BallCode.cs",
+              "DocumentMoniker": "C:\\Users\\cleme\\Spiele\\Breakout\\Assets\\Code\\BallCode.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\cleme\\Spiele\\Breakout\\Assets\\Code\\BallCode.cs",
+              "ToolTip": "C:\\Users\\cleme\\Spiele\\Breakout\\Assets\\Code\\BallCode.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\cleme\\Spiele\\Breakout\\Assets\\Code\\BallCode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T19:54:47.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "HealingCode.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HealingCode.cs",
+              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HealingCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealingCode.cs",
-              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HealingCode.cs",
+              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HealingCode.cs",
               "RelativeToolTip": "Assets\\Scripts\\HealingCode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAMAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T18:17:52.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "HealthbarCode.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HealthbarCode.cs",
+              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HealthbarCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealthbarCode.cs",
-              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HealthbarCode.cs",
+              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HealthbarCode.cs",
               "RelativeToolTip": "Assets\\Scripts\\HealthbarCode.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAQwDEAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -135,11 +143,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "CoinItemCode.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\CoinItemCode.cs",
+              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\CoinItemCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CoinItemCode.cs",
-              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\CoinItemCode.cs",
+              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\CoinItemCode.cs",
               "RelativeToolTip": "Assets\\Scripts\\CoinItemCode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -147,11 +155,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "SensorCode.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\SensorCode.cs",
+              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\SensorCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SensorCode.cs",
-              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\SensorCode.cs",
+              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\SensorCode.cs",
               "RelativeToolTip": "Assets\\Scripts\\SensorCode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -159,23 +167,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
-              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
-              "ViewState": "AgIAAM8AAAAAAAAAAAAAAOkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAqwN0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T13:42:23.4Z"
+              "WhenOpened": "2025-03-06T13:42:23.4Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "SpeedItemCode.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\SpeedItemCode.cs",
+              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\SpeedItemCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpeedItemCode.cs",
-              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\SpeedItemCode.cs",
+              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\SpeedItemCode.cs",
               "RelativeToolTip": "Assets\\Scripts\\SpeedItemCode.cs",
               "ViewState": "AgIAAAUAAAAA3GrJ4r0VwA4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -183,11 +192,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "JumpItemCode.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\JumpItemCode.cs",
+              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\JumpItemCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\JumpItemCode.cs",
-              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\JumpItemCode.cs",
+              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\JumpItemCode.cs",
               "RelativeToolTip": "Assets\\Scripts\\JumpItemCode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -195,11 +204,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "TouchDisappearing.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\TouchDisappearing.cs",
+              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\TouchDisappearing.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TouchDisappearing.cs",
-              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\TouchDisappearing.cs",
+              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\TouchDisappearing.cs",
               "RelativeToolTip": "Assets\\Scripts\\TouchDisappearing.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -207,23 +216,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "HealthCode.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HealthCode.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthCode.cs",
-              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HealthCode.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HealthCode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:03:47.987Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "AudioCode.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\AudioCode.cs",
+              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\AudioCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AudioCode.cs",
-              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\AudioCode.cs",
+              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\AudioCode.cs",
               "RelativeToolTip": "Assets\\Scripts\\AudioCode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -231,11 +228,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "DisappearObject.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\DisappearObject.cs",
+              "DocumentMoniker": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\DisappearObject.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DisappearObject.cs",
-              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\DisappearObject.cs",
+              "ToolTip": "C:\\Users\\SattlerClemens\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\DisappearObject.cs",
               "RelativeToolTip": "Assets\\Scripts\\DisappearObject.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAmwB8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

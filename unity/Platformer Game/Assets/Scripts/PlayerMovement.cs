@@ -219,6 +219,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 live += health;
             }
+            healthCode.HealthUpdate(live);
         }
     }
 

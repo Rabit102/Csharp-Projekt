@@ -7,6 +7,7 @@ public class Healing : MonoBehaviour
     [SerializeField] int addedLive = 1;
     [SerializeField] AudioClip liveSound;
     [SerializeField] bool maxitem = false;
+    HealthbarCode healthCode;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
