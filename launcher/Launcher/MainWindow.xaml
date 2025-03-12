@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="Launcher" Height="700" Width="450" Background="Bisque">
 
+	<Window.DataContext>
+		<local:Controller/>
+	</Window.DataContext>
+
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="FontFamily" Value="Verdana"/>
