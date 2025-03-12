@@ -8,7 +8,6 @@ public class BulletSpawner : MonoBehaviour
     [Header("SpawnSettings")]
     public GameObject bulletPrefab;
     public float spawnInterval = 1.5f;
-    public float spawnDistance = 10f;
     public int bulletsPerWave = 20;
     private int bulletsSpawned = 0;
 
@@ -28,7 +27,7 @@ public class BulletSpawner : MonoBehaviour
             bulletsSpawned++;
             yield return new WaitForSeconds(spawnInterval);
         }
-        //GameManager.Instance.WaveCompleted();
+        GameManager.Instance.WaveCompleted();
     }
 
     void SpawnBullet()
@@ -40,22 +39,22 @@ public class BulletSpawner : MonoBehaviour
         switch(side)
         {
             case 0:
-            spawnPosition = new Vector2(Random.Range(-spawnDistance, spawnDistance), spawnDistance);
+            spawnPosition = new Vector2(0, 6);
             moveDirection = Vector2.down;
             break;
             
             case 1:
-            spawnPosition = new Vector2(spawnDistance, Random.Range(-spawnDistance, spawnDistance));
+            spawnPosition = new Vector2(11, 0);
             moveDirection = Vector2.left;
             break;
 
             case 2:
-            spawnPosition = new Vector2(Random.Range(-spawnDistance, spawnDistance), -spawnDistance);
+            spawnPosition = new Vector2(0, -6);
             moveDirection = Vector2.up;
             break;
 
             case 3:
-            spawnPosition = new Vector2(-spawnDistance, Random.Range(-spawnDistance, spawnDistance));
+            spawnPosition = new Vector2(-11, 0);
             moveDirection = Vector2.right;
             break;
         }
@@ -64,7 +63,7 @@ public class BulletSpawner : MonoBehaviour
         Bullet bulletScript = bullet.GetComponent<Bullet>();
         bulletScript.direction = moveDirection;
 
-        /*if(GameManager.Instance.currentWave > 3)
+        if(GameManager.Instance.currentWave > 3)
         {
             if(Random.value <0.2f)
             {
@@ -72,7 +71,7 @@ public class BulletSpawner : MonoBehaviour
             }
         }
         
-        bulletScript.speed += GameManager.Instance.currentWave * 0.5f*/
+        bulletScript.speed += GameManager.Instance.currentWave * 0.5f;
     }
 
     // Update is called once per frame

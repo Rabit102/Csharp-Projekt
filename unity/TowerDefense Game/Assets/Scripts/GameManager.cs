@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
 
     public void WaveCompleted()
     {
-        if(currentWave < totalWaves)
+        if(currentWave <= totalWaves)
         {
             currentWave++;
             
@@ -69,7 +69,8 @@ public class GameManager : MonoBehaviour
 
     void EndGame(bool victory)
     {
-        StopAllCoroutines();
+        Debug.Log("endgamestarted");
+        bulletSpawner.StopAllCoroutines();
         //Bulletdestroy
         gameOverPanel.SetActive(true);
         if(victory)
@@ -78,7 +79,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            finalMessageText.text = "Tower destroyed! Try to upgrade your Shield";
+            finalMessageText.text = "Tower destroyed!\nTry to upgrade your Shield";
             upgradePanel.SetActive(true);
         }
     }

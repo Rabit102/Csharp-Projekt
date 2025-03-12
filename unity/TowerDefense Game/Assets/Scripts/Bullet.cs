@@ -42,7 +42,7 @@ public class Bullet : MonoBehaviour
         if (collision.CompareTag("Shield"))
         {
             Destroy(gameObject);
-            Debug.Log("Bullet deleted!");
+            GameManager.Instance.AddScore(10);
         }
         else if (collision.CompareTag("Tower"))
         {
