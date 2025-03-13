@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using What2Do2Day.Models;
 using System.Net.Http;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace What2Do2Day.Pages
 {
@@ -25,12 +24,10 @@ namespace What2Do2Day.Pages
         {
             var client = _httpClientFactory.CreateClient("AniList");
 
-            // GraphQL query to fetch anime (paginated, 50 per page)
             string query = @"
                 query ($page: Int, $perPage: Int, $search: String) {
                     Page(page: $page, perPage: $perPage) {
                         media(search: $search, type: ANIME, sort: POPULARITY_DESC) {
-                            id
                             title {
                                 romaji
                             }
@@ -68,14 +65,12 @@ namespace What2Do2Day.Pages
 
             AnimeList = aniListResponse.Data.Page.Media.Select(m => new AnimeItem
             {
-                Id = m.Id,
                 Title = m.Title.Romaji,
                 CoverImage = m.CoverImage.Large
             }).ToList();
         }
     }
 
-    // Helper classes for deserializing AniList response
     public class AniListResponse
     {
         public Data Data { get; set; }
@@ -93,7 +88,6 @@ namespace What2Do2Day.Pages
 
     public class Media
     {
-        public int Id { get; set; }
         public Title Title { get; set; }
         public CoverImage CoverImage { get; set; }
     }

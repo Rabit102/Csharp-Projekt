@@ -1,11 +1,6 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services
 builder.Services.AddRazorPages();
+builder.Services.AddControllers(); // Add this line
 builder.Services.AddHttpClient("AniList", client =>
 {
     client.BaseAddress = new Uri("https://graphql.anilist.co/");
@@ -13,18 +8,15 @@ builder.Services.AddHttpClient("AniList", client =>
 });
 
 var app = builder.Build();
-
-// Configure the HTTP request pipeline
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
     app.UseHsts();
 }
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
 app.MapRazorPages();
-
+app.MapControllers(); 
 app.Run();

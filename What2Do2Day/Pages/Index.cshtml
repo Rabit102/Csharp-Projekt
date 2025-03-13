@@ -9,7 +9,7 @@
     <div class="mb-8">
         <input type="text" 
                id="searchInput"
-               placeholder="Search for an anime (e.g., 69 Days)..." 
+               placeholder="Search for an anime (e.g., HxH)..." 
                class="w-full max-w-lg mx-auto block p-3 rounded-lg bg-gray-800 bg-opacity-70 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300" />
     </div>
 
@@ -17,31 +17,48 @@
     <div id="animeGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
         @foreach (var animeItem in Model.AnimeList)
         {
-            <a href="/Anime/Details?id=@animeItem.Id" class="group block bg-gray-800 bg-opacity-50 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:bg-opacity-70 transition duration-300">
+            <div class="anime-card group block bg-gray-800 bg-opacity-50 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:bg-opacity-70 transition duration-300 cursor-pointer" data-title="@Uri.EscapeDataString(animeItem.Title)">
                 <img src="@animeItem.CoverImage" alt="@animeItem.Title" class="w-full h-48 object-cover">
                 <p class="p-3 text-center text-sm font-medium text-gray-200 group-hover:text-blue-400">@animeItem.Title</p>
-            </a>
+            </div>
         }
+    </div>
+
+    <!-- Modal Overlay -->
+    <div id="modalOverlay" class="fixed inset-0 bg-black bg-opacity-75 hidden flex items-center justify-center z-50">
+        <div id="modalContent" class="bg-gray-900 p-6 rounded-lg max-w-lg w-full max-h-[80vh] overflow-y-auto">
+            <h2 id="modalTitle" class="text-2xl font-bold mb-4 text-gray-100"></h2>
+            <img id="modalImage" class="w-full h-48 object-cover rounded-lg mb-4" alt="">
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-gray-200">Description</h3>
+                <p id="modalDescription" class="text-gray-300"></p>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-gray-200">Genres</h3>
+                <select id="modalGenres" class="w-full p-2 bg-gray-700 bg-opacity-80 text-white rounded-lg border border-gray-600 hover:bg-opacity-100 transition duration-300"></select>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-gray-200">Rating</h3>
+                <div id="modalRating" class="flex text-yellow-400"></div>
+            </div>
+        </div>
     </div>
 </div>
 
 <script>
+    // DOM Elements
     const searchInput = document.getElementById('searchInput');
     const animeGrid = document.getElementById('animeGrid');
     let allAnime = @Html.Raw(Json.Serialize(Model.AnimeList));
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalContent = document.getElementById('modalContent');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalImage = document.getElementById('modalImage');
+    const modalDescription = document.getElementById('modalDescription');
+    const modalGenres = document.getElementById('modalGenres');
+    const modalRating = document.getElementById('modalRating');
 
-    // Initial fetch function (for server-side search fallback)
-    async function fetchAnime(query) {
-        const response = await fetch(`/?searchQuery=${encodeURIComponent(query)}`);
-        const html = await response.text();
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, 'text/html');
-        const newGrid = doc.getElementById('animeGrid').innerHTML;
-        animeGrid.innerHTML = newGrid;
-        allAnime = JSON.parse(doc.querySelector('script').innerText.match(/allAnime = (.+);/)[1]);
-    }
-
-    // Debounce function to limit API calls
+    // Debounce for search
     function debounce(func, wait) {
         let timeout;
         return function (...args) {
@@ -50,23 +67,97 @@
         };
     }
 
-    // Client-side filtering with server-side fallback
+    // Update grid with search
     const updateGrid = debounce(async function () {
         const query = searchInput.value.trim().toLowerCase();
-        if (query.length > 2) { // Trigger server fetch for longer queries
-            await fetchAnime(query);
-        } else { // Client-side filter for short queries
+        if (query.length > 2) {
+            const response = await fetch(`/?searchQuery=${encodeURIComponent(query)}`);
+            if (!response.ok) {
+                console.error('Search fetch failed:', response.status);
+                return;
+            }
+            const html = await response.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            const newGrid = doc.getElementById('animeGrid').innerHTML;
+            animeGrid.innerHTML = newGrid;
+            allAnime = JSON.parse(doc.querySelector('script').innerText.match(/allAnime = (.+);/)[1]);
+            attachClickHandlers(); // Re-attach handlers after grid update
+        } else {
             const filteredAnime = allAnime.filter(anime => 
                 anime.title.toLowerCase().startsWith(query)
             );
             animeGrid.innerHTML = filteredAnime.map(anime => `
-                <a href="/Anime/Details?id=${anime.id}" class="group block bg-gray-800 bg-opacity-50 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:bg-opacity-70 transition duration-300">
+                <div class="anime-card group block bg-gray-800 bg-opacity-50 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:bg-opacity-70 transition duration-300 cursor-pointer" data-title="${encodeURIComponent(anime.title)}">
                     <img src="${anime.coverImage}" alt="${anime.title}" class="w-full h-48 object-cover">
                     <p class="p-3 text-center text-sm font-medium text-gray-200 group-hover:text-blue-400">${anime.title}</p>
-                </a>
+                </div>
             `).join('');
+            attachClickHandlers();
         }
     }, 300);
 
+    // Attach click handlers to anime cards
+    function attachClickHandlers() {
+        const animeCards = document.querySelectorAll('.anime-card');
+        animeCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const title = card.getAttribute('data-title');
+                showDetails(title);
+            });
+        });
+    }
+
+    // Show details in modal
+   async function showDetails(encodedTitle) {
+    const title = decodeURIComponent(encodedTitle);
+    console.log('Fetching details for:', title);
+    const url = `/api/Anime/details?title=${encodeURIComponent(title)}`;
+    console.log('API URL:', url);
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`API returned ${response.status}: ${await response.text()}`);
+        }
+        const data = await response.json();
+        console.log('API response:', data);
+
+        modalTitle.textContent = data.title || 'Unknown Title';
+        modalImage.src = data.coverImage || 'https://via.placeholder.com/150x200?text=No+Image';
+        modalImage.alt = data.title || 'No Title';
+        modalDescription.textContent = data.description || 'No description available';
+        modalGenres.innerHTML = (data.genres || []).map(genre => `<option>${genre}</option>`).join('');
+        
+        const rating = (data.rating || 0) / 20;
+        modalRating.innerHTML = '';
+        for (let i = 1; i <= 5; i++) {
+            const star = document.createElement('span');
+            star.textContent = i <= Math.floor(rating) ? '★' : '☆';
+            star.classList.add('text-2xl');
+            modalRating.appendChild(star);
+        }
+
+        modalOverlay.classList.remove('hidden');
+        console.log('Modal should now be visible');
+    } catch (error) {
+        console.error('Error fetching details:', error);
+        modalTitle.textContent = 'Error';
+        modalDescription.textContent = 'Could not load details: ' + error.message;
+        modalImage.src = 'https://via.placeholder.com/150x200?text=Error';
+        modalGenres.innerHTML = '';
+        modalRating.innerHTML = '';
+        modalOverlay.classList.remove('hidden');
+    }
+}
+    // Hide modal when clicking outside
+    modalOverlay.addEventListener('click', (event) => {
+        if (event.target === modalOverlay) {
+            modalOverlay.classList.add('hidden');
+            console.log('Modal hidden');
+        }
+    });
+
+    // Initial setup
     searchInput.addEventListener('input', updateGrid);
+    attachClickHandlers();
 </script>
