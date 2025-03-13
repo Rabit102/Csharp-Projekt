@@ -71,8 +71,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("endgamestarted");
         bulletSpawner.StopAllCoroutines();
-        //Bulletdestroy
-        gameOverPanel.SetActive(true);
         if(victory)
         {
             finalMessageText.text = "Congratulations! Attack is over";

@@ -24,18 +24,22 @@ public class ShieldController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             targetPosition = new Vector2(0, distance);
+            transform.rotation = Quaternion.Euler(0, 0, 90);
         }
         else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             targetPosition = new Vector2(-distance, 0);
+            transform.rotation = Quaternion.Euler(0, 0, 180);
         }
         else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             targetPosition = new Vector2(0, -distance);
+            transform.rotation = Quaternion.Euler(0, 0, 270);
         }
         else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             targetPosition = new Vector2(distance, 0);
+            transform.rotation = Quaternion.Euler(0, 0, 360);
         }
 
         transform.localPosition = Vector2.MoveTowards(transform.localPosition, targetPosition, moveSpeed * Time.deltaTime);
