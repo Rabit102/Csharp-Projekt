@@ -19,6 +19,7 @@ public class Bullet : MonoBehaviour
     {
         GameObject tower = GameObject.FindWithTag("Tower");
         if(tower.transform != null) {towerTransform = tower.transform;}
+        UpdateRotation();
     }
 
     // Update is called once per frame
@@ -32,9 +33,10 @@ public class Bullet : MonoBehaviour
             {
                 direction = -direction;
                 isDecoy = false;
+                UpdateRotation();
             }
         }
-        transform.Translate(direction * speed * Time.deltaTime);
+        transform.Translate(direction * speed * Time.deltaTime, Space.World);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -49,6 +51,16 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             Debug.Log("GameOver ");
             GameManager.Instance.GameOver();
+        }
+    }
+    void UpdateRotation()
+    {
+        if (direction != Vector2.zero)
+        {
+            if(direction == Vector2.up) transform.rotation = Quaternion.Euler(0,0,90);
+        else if(direction == Vector2.down) transform.rotation = Quaternion.Euler(0,0,270);
+        else if(direction == Vector2.left) transform.rotation = Quaternion.Euler(0,0,180);
+        else if(direction == Vector2.right) transform.rotation = Quaternion.Euler(0,0,0);
         }
     }
 }

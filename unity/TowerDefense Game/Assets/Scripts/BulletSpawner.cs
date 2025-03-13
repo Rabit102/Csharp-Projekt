@@ -40,25 +40,21 @@ public class BulletSpawner : MonoBehaviour
         {
             case 0:
             spawnPosition = new Vector2(0, 6);
-            transform.rotation = Quaternion.Euler(0, 0, 270);
             moveDirection = Vector2.down;
             break;
             
             case 1:
             spawnPosition = new Vector2(11, 0);
-            transform.rotation = Quaternion.Euler(0, 0, 180);
             moveDirection = Vector2.left;
             break;
 
             case 2:
             spawnPosition = new Vector2(0, -6);
-            transform.rotation = Quaternion.Euler(0, 0, 90);
             moveDirection = Vector2.up;
             break;
 
             case 3:
             spawnPosition = new Vector2(-11, 0);
-            transform.rotation = Quaternion.Euler(0, 0, 0);
             moveDirection = Vector2.right;
             break;
         }
