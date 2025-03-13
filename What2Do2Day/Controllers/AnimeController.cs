@@ -1,30 +1,29 @@
-using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc;
 using What2Do2Day.Models;
 using System.Net.Http;
 using System.Text.Json;
 
-namespace What2Do2Day.Pages.Anime
+namespace What2Do2Day.Controllers
 {
-    public class DetailsModel : PageModel
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AnimeController : ControllerBase
     {
         private readonly IHttpClientFactory _httpClientFactory;
 
-        public AnimeItem Anime { get; set; }
-        public string EpisodeUrl { get; set; }
-
-        public DetailsModel(IHttpClientFactory httpClientFactory)
+        public AnimeController(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
 
-        public async Task OnGetAsync(int id)
+        [HttpGet("details")]
+        public async Task<IActionResult> GetDetails(string title)
         {
             var client = _httpClientFactory.CreateClient("AniList");
 
             string query = @"
-                query ($id: Int) {
-                    Media(id: $id, type: ANIME) {
-                        id
+                query ($search: String) {
+                    Media(search: $search, type: ANIME) {
                         title {
                             romaji
                         }
@@ -33,13 +32,14 @@ namespace What2Do2Day.Pages.Anime
                         }
                         description
                         genres
+                        averageScore
                     }
                 }";
 
             var requestBody = new
             {
                 query,
-                variables = new { id }
+                variables = new { search = title }
             };
 
             var content = new StringContent(
@@ -57,20 +57,20 @@ namespace What2Do2Day.Pages.Anime
             });
 
             var media = aniListResponse.Data.Media;
-            Anime = new AnimeItem
+            var result = media != null ? new AnimeItem
             {
-                Id = media.Id,
                 Title = media.Title.Romaji,
                 CoverImage = media.CoverImage.Large,
                 Description = media.Description,
                 Genres = media.Genres,
-                EpisodeUrl = "https://www.crunchyroll.com/watch/GY5PWWP86/placeholder" // Placeholder; replace with real logic
-            };
-            EpisodeUrl = Anime.EpisodeUrl;
+                Rating = media.AverageScore
+            } : new AnimeItem { Title = "Not Found" };
+
+            return Ok(result);
         }
     }
 
-    // Helper classes for deserializing AniList response
+    // Same helper classes as before
     public class AniListDetailResponse
     {
         public Data Data { get; set; }
@@ -83,11 +83,11 @@ namespace What2Do2Day.Pages.Anime
 
     public class Media
     {
-        public int Id { get; set; }
         public Title Title { get; set; }
         public CoverImage CoverImage { get; set; }
         public string Description { get; set; }
         public string[] Genres { get; set; }
+        public double AverageScore { get; set; }
     }
 
     public class Title

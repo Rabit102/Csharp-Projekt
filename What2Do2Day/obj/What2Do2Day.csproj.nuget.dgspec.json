@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lukas\\.vscode\\Projekt\\What2Do2Day\\What2Do2Day.csproj": {}
+    "C:\\Users\\Lukas\\.vscode\\Projekt\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lukas\\.vscode\\Projekt\\What2Do2Day\\What2Do2Day.csproj": {
+    "C:\\Users\\Lukas\\.vscode\\Projekt\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lukas\\.vscode\\Projekt\\What2Do2Day\\What2Do2Day.csproj",
+        "projectUniqueName": "C:\\Users\\Lukas\\.vscode\\Projekt\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj",
         "projectName": "What2Do2Day",
-        "projectPath": "C:\\Users\\Lukas\\.vscode\\Projekt\\What2Do2Day\\What2Do2Day.csproj",
+        "projectPath": "C:\\Users\\Lukas\\.vscode\\Projekt\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj",
         "packagesPath": "C:\\Users\\Lukas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lukas\\.vscode\\Projekt\\What2Do2Day\\obj\\",
+        "outputPath": "C:\\Users\\Lukas\\.vscode\\Projekt\\Csharp-Projekt\\What2Do2Day\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
