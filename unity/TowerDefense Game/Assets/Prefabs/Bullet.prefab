@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8587712062658608090}
   - component: {fileID: 2029640516480048065}
-  - component: {fileID: 5497644835199051809}
   - component: {fileID: 5113250651399337964}
   - component: {fileID: 4907875714909971383}
-  - component: {fileID: 1304299929091247877}
+  - component: {fileID: 7407040528670686737}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -29,13 +28,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8128890040617167684}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000020683272, y: -0.9999653, z: -0.0026145752, w: -0.007909941}
-  m_LocalPosition: {x: -14.54, y: 0.1, z: -0.0016506301}
+  m_LocalRotation: {x: -0.70714927, y: -0.70701534, z: 0.003744936, w: -0.007441676}
+  m_LocalPosition: {x: -34.021362, y: -3.4536486, z: -0.0016506301}
   m_LocalScale: {x: 2.04, y: 2.1869314, z: 7.091314}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -0.3, y: -180.906, z: 0.005}
+  m_LocalEulerAnglesHint: {x: 0.906, y: -180.299, z: 90.008}
 --- !u!212 &2029640516480048065
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -80,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300210, guid: 388e8eb6de557964999d88f8d42114db, type: 3}
+  m_Sprite: {fileID: 21300158, guid: 47d6d26076e81a34c863a03064a7fe77, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -90,57 +89,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!60 &5497644835199051809
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8128890040617167684}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.5}
-    newSize: {x: 0.5, y: 0.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 0.5773587}
-      - {x: -0.5, y: -0.28866667}
-      - {x: 0.5, y: -0.28866667}
-  m_UseDelaunayMesh: 0
+  m_SpriteSortPoint: 1
 --- !u!50 &5113250651399337964
 Rigidbody2D:
   serializedVersion: 5
@@ -184,7 +133,7 @@ MonoBehaviour:
   direction: {x: 0, y: 0}
   isDecoy: 0
   decoyTriggerDistance: 5
---- !u!58 &1304299929091247877
+--- !u!58 &7407040528670686737
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,4 +168,4 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.00000047683716, y: 0}
-  m_Radius: 0.19
+  m_Radius: 0.25
