@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            finalMessageText.text = "Tower destroyed!\nTry to upgrade your Shield";
+            finalMessageText.text = "Tower destroyed!";
             upgradePanel.SetActive(true);
         }
     }
