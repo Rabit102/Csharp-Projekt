@@ -1,6 +1,0 @@
-@what2doAPI_HostAddress = http://localhost:5157
-
-GET {{what2doAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

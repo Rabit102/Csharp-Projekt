@@ -1,0 +1,72 @@
+﻿@page
+@model What2Do2Day.Pages.IndexModel
+@{
+    ViewData["Title"] = "Anime Search";
+}
+
+<div class="container mx-auto p-6">
+    <!-- Search Bar -->
+    <div class="mb-8">
+        <input type="text" 
+               id="searchInput"
+               placeholder="Search for an anime (e.g., 69 Days)..." 
+               class="w-full max-w-lg mx-auto block p-3 rounded-lg bg-gray-800 bg-opacity-70 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300" />
+    </div>
+
+    <!-- Anime Grid -->
+    <div id="animeGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        @foreach (var animeItem in Model.AnimeList)
+        {
+            <a href="/Anime/Details?id=@animeItem.Id" class="group block bg-gray-800 bg-opacity-50 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:bg-opacity-70 transition duration-300">
+                <img src="@animeItem.CoverImage" alt="@animeItem.Title" class="w-full h-48 object-cover">
+                <p class="p-3 text-center text-sm font-medium text-gray-200 group-hover:text-blue-400">@animeItem.Title</p>
+            </a>
+        }
+    </div>
+</div>
+
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const animeGrid = document.getElementById('animeGrid');
+    let allAnime = @Html.Raw(Json.Serialize(Model.AnimeList));
+
+    // Initial fetch function (for server-side search fallback)
+    async function fetchAnime(query) {
+        const response = await fetch(`/?searchQuery=${encodeURIComponent(query)}`);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const newGrid = doc.getElementById('animeGrid').innerHTML;
+        animeGrid.innerHTML = newGrid;
+        allAnime = JSON.parse(doc.querySelector('script').innerText.match(/allAnime = (.+);/)[1]);
+    }
+
+    // Debounce function to limit API calls
+    function debounce(func, wait) {
+        let timeout;
+        return function (...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    }
+
+    // Client-side filtering with server-side fallback
+    const updateGrid = debounce(async function () {
+        const query = searchInput.value.trim().toLowerCase();
+        if (query.length > 2) { // Trigger server fetch for longer queries
+            await fetchAnime(query);
+        } else { // Client-side filter for short queries
+            const filteredAnime = allAnime.filter(anime => 
+                anime.title.toLowerCase().startsWith(query)
+            );
+            animeGrid.innerHTML = filteredAnime.map(anime => `
+                <a href="/Anime/Details?id=${anime.id}" class="group block bg-gray-800 bg-opacity-50 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:bg-opacity-70 transition duration-300">
+                    <img src="${anime.coverImage}" alt="${anime.title}" class="w-full h-48 object-cover">
+                    <p class="p-3 text-center text-sm font-medium text-gray-200 group-hover:text-blue-400">${anime.title}</p>
+                </a>
+            `).join('');
+        }
+    }, 300);
+
+    searchInput.addEventListener('input', updateGrid);
+</script>
