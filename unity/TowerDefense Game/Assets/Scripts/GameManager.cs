@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,11 +16,11 @@ public class GameManager : MonoBehaviour
     public BulletSpawner bulletSpawner;
 
     [Header("UIElements")]
-    public Text waveText;
-    public Text scoreText;
+    public TextMeshProUGUI waveText;
+    public TextMeshProUGUI scoreText;
     public GameObject gameOverPanel;
     public GameObject upgradePanel;
-    public Text finalMessageText;
+    public TextMeshProUGUI finalMessageText;
 
     [Header("Other")]
     public int score = 0;
