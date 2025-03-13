@@ -16,6 +16,6 @@ public class CounterCode : MonoBehaviour
     void Update()
     {
         counter += Time.deltaTime;
-        counterText.text = counter.ToString("0.00");
+        counterText.text = "Timer:\n" + counter.ToString("0.00");
     }
 }

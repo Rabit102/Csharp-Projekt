@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private SensorCode wallSensorLB;
     private SensorCode wallSensorLT;
     public HealthbarCode healthCode;
+    public PauseMenuCode pauseMenuCode;
 
     [SerializeField] float rollingForce = 12.0f;// Rollkraft
     [SerializeField] float jumpForce = 7.5f; // Sprungkraft
@@ -92,6 +94,11 @@ public class PlayerMovement : MonoBehaviour
         if (wallSensorRT.State() && wallSensorRB.State())
         {
             //Debug.Log("Wall");
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+           pauseMenuCode.PauseGame();
         }
         
         float directionX = Input.GetAxis("Horizontal"); // Steuerungseingaben
