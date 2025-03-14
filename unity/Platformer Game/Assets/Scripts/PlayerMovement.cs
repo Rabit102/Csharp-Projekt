@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -28,10 +29,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioClip hurtSound;
     [SerializeField] private AudioClip blockSound;
     [SerializeField] private AudioClip jumpSound;
+    [SerializeField] GameObject slideDust;
 
     private bool rolling = false; // Rollen
     private bool grounded = false; // Bodenkontakt
     private bool crawling = false; // Kriechen
+    private bool extrajump = false;
+    private bool wallSliding = false; // Wandrutschen
 
     private float sizeX = 0.75f; // Größe des Spielers
     private float sizeY = 1.2f; // Größe des Spielers
@@ -42,7 +46,6 @@ public class PlayerMovement : MonoBehaviour
 
     private int currentAttack = 0; // Aktueller Angriff
     private int direction = 1; // Richtung der Bewegungen
-    private bool extrajump;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -124,11 +127,18 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("AirSpeedY", rigidbody.linearVelocity.y);
 
+        if (!rolling)
+        {
+            wallSliding = (wallSensorRT.State() && wallSensorRB.State()) || (wallSensorLT.State() && wallSensorLB.State());
+            animator.SetBool("WallSlide", wallSliding);
+        }
+
         if (live <= 0) // Tod
         {
             //AudioCode.instance.PlaySound(deathSound);
             animator.SetBool("noBlood", false);
             animator.SetTrigger("Death");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
 
@@ -263,5 +273,26 @@ public class PlayerMovement : MonoBehaviour
             boxCollider.autoTiling = true;
         }
         animator.SetBool("Crawling", crawling);
+    }
+
+    void SlideDust()
+    {
+        Vector3 spawnPosition;
+
+        if(direction == 1)
+        {
+            spawnPosition = wallSensorRT.transform.position;
+        }
+        else
+        {
+            spawnPosition = wallSensorLT.transform.position;
+        }
+
+        if (slideDust != null)
+        {
+            GameObject dust = Instantiate(slideDust, spawnPosition, gameObject.transform.localRotation) as GameObject;
+
+            dust.transform.localScale = new Vector3(direction, 1, 1);
+        }
     }
 }

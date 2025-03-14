@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7963605664777870569}
   - component: {fileID: 502503384616830818}
-  - component: {fileID: 4307939522712821671}
   - component: {fileID: 1064545641711574943}
   m_Layer: 0
   m_Name: WallSensorRB
@@ -70,18 +69,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.399701, y: 0.062873214}
   m_Radius: 0.037425786
---- !u!114 &4307939522712821671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2298154258726870721}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2a8bdc7f41b704693ad497097f30dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1064545641711574943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,7 +91,6 @@ GameObject:
   m_Component:
   - component: {fileID: 891763016086969488}
   - component: {fileID: 8659013958639221535}
-  - component: {fileID: 7518266848031812379}
   - component: {fileID: 5510013735679001822}
   m_Layer: 0
   m_Name: GroundSensorR
@@ -122,7 +108,7 @@ Transform:
   m_GameObject: {fileID: 2831451016861639329}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.715, y: 0.007, z: 0}
+  m_LocalPosition: {x: 0.715, y: 0.038, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -164,18 +150,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.399701, y: 0.062873214}
   m_Radius: 0.037425786
---- !u!114 &7518266848031812379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2831451016861639329}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2a8bdc7f41b704693ad497097f30dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5510013735679001822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,7 +344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9340d57edaac7f45b46497fb75ba6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthCode: {fileID: 0}
+  healthCode: {fileID: 5733634019481910042, guid: 13bb60c6dc8aa1145a71657b9fa981a0, type: 3}
+  pauseMenuCode: {fileID: 1514576280457827032, guid: bdd834a6cad1fd74ead1a3ebbbd57a0d, type: 3}
   rollingForce: 6
   jumpForce: 7.5
   speed: 4
@@ -382,6 +357,7 @@ MonoBehaviour:
   hurtSound: {fileID: 8300000, guid: dd02487337b039f4cb3896fc30b1f9f9, type: 3}
   blockSound: {fileID: 8300000, guid: 2d662875bfc441648bd8a183343da871, type: 3}
   jumpSound: {fileID: 8300000, guid: 8c72166cadb4607498d5f6b6f2ddb3db, type: 3}
+  slideDust: {fileID: 1038168246061390451, guid: 9a51e9229205021428c7e9cb9a04fa92, type: 3}
 --- !u!95 &5874180141107968041
 Animator:
   serializedVersion: 7
@@ -414,7 +390,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1748716464635251185}
   - component: {fileID: 2957692672397849598}
-  - component: {fileID: 6389322918374454527}
   - component: {fileID: 5599487911224094448}
   m_Layer: 0
   m_Name: WallSensorLT
@@ -474,18 +449,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.399701, y: 0.062873214}
   m_Radius: 0.037425786
---- !u!114 &6389322918374454527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5092744072176124023}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2a8bdc7f41b704693ad497097f30dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5599487911224094448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,7 +471,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2565056230487077226}
   - component: {fileID: 2846706589898456322}
-  - component: {fileID: 6586273580595631022}
   - component: {fileID: 5983064217931867309}
   m_Layer: 0
   m_Name: WallSensorLB
@@ -568,18 +530,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.399701, y: 0.062873214}
   m_Radius: 0.037425786
---- !u!114 &6586273580595631022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5645782949901355101}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2a8bdc7f41b704693ad497097f30dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5983064217931867309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -602,7 +552,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4190570915324625974}
   - component: {fileID: 8813800585235132635}
-  - component: {fileID: 6531430950137555327}
   - component: {fileID: 4795673146395202788}
   m_Layer: 0
   m_Name: WallSensorRT
@@ -662,18 +611,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.399701, y: 0.062873214}
   m_Radius: 0.037425786
---- !u!114 &6531430950137555327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6556068619610460190}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2a8bdc7f41b704693ad497097f30dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4795673146395202788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,7 +633,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8523306508465096252}
   - component: {fileID: 8696594410013523209}
-  - component: {fileID: 7530005286601789895}
   - component: {fileID: 2392198752716657977}
   m_Layer: 0
   m_Name: GroundSensorL
@@ -714,7 +650,7 @@ Transform:
   m_GameObject: {fileID: 6723677564513715954}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.008, y: 0.007, z: 0}
+  m_LocalPosition: {x: 0.085, y: 0.038, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -756,18 +692,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.399701, y: 0.062873214}
   m_Radius: 0.037425786
---- !u!114 &7530005286601789895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6723677564513715954}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2a8bdc7f41b704693ad497097f30dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2392198752716657977
 MonoBehaviour:
   m_ObjectHideFlags: 0

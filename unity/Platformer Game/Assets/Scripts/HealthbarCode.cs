@@ -18,7 +18,6 @@ public class HealthbarCode : MonoBehaviour
     {
         if (player != null)
         {
-            Debug.Log("Player found");
             foreach (Image heart in hearts)
             {
                 Destroy(heart.gameObject);
@@ -31,7 +30,6 @@ public class HealthbarCode : MonoBehaviour
                 Image newHeart = Instantiate(heartPrefap, transform);
                 newHeart.sprite = heart;
                 hearts.Add(newHeart);
-                Debug.Log("Heart " + i + " created");
             }
         }
         else
@@ -42,24 +40,18 @@ public class HealthbarCode : MonoBehaviour
 
     public void HealthUpdate(int live)
     {
-        Debug.Log(hearts.Count);
         if (player != null)
         {
             for (int i = 0; i < player.Maxlive; i++)
             {
-                Debug.Log("i:" + i + " live:" + live + "bool:");
-                Debug.Log(i<live);
                 if (i < live)
                 {
                     hearts[i].enabled = true;
-                    Debug.Log("Heart " + i + " enabled");
                 }
                 else
                 {
                     hearts[i].enabled = false;
-                    Debug.Log("Heart " + i + " disabled");
                 }
-                Debug.Log("Health updated");
             }
         }
     }
