@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using What2Do2Day.Models;
 using System.Net.Http;
 using System.Text.Json;
+using System.Threading.Tasks;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace What2Do2Day.Pages
 {
@@ -11,9 +14,11 @@ namespace What2Do2Day.Pages
         private readonly IHttpClientFactory _httpClientFactory;
 
         [BindProperty(SupportsGet = true)]
-        public string SearchQuery { get; set; }
+        public string? SearchQuery { get; set; } // Nullable gemacht
 
         public List<AnimeItem> AnimeList { get; set; } = new();
+        public List<string> Categories { get; set; } = new List<string> { "Am Schauen" };
+        public Dictionary<string, List<AnimeItem>> CategorizedAnime { get; set; } = new();
 
         public IndexModel(IHttpClientFactory httpClientFactory)
         {
@@ -45,7 +50,7 @@ namespace What2Do2Day.Pages
                 {
                     page = 1,
                     perPage = 50,
-                    search = string.IsNullOrEmpty(SearchQuery) ? null : SearchQuery
+                    search = SearchQuery
                 }
             };
 
@@ -55,50 +60,84 @@ namespace What2Do2Day.Pages
                 "application/json");
 
             var response = await client.PostAsync("", content);
-            response.EnsureSuccessStatusCode();
-
-            var jsonResponse = await response.Content.ReadAsStringAsync();
-            var aniListResponse = JsonSerializer.Deserialize<AniListResponse>(jsonResponse, new JsonSerializerOptions
+            if (response.IsSuccessStatusCode)
             {
-                PropertyNameCaseInsensitive = true
-            });
+                var jsonResponse = await response.Content.ReadAsStringAsync();
+                var aniListResponse = JsonSerializer.Deserialize<AniListResponse>(jsonResponse, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
 
-            AnimeList = aniListResponse.Data.Page.Media.Select(m => new AnimeItem
+                AnimeList = aniListResponse?.Data?.Page?.Media?.Select(m => new AnimeItem
+                {
+                    Title = m.Title?.Romaji,
+                    CoverImage = m.CoverImage?.Large,
+                    Category = "Am Schauen"
+                }).ToList() ?? new List<AnimeItem>();
+
+                CategorizedAnime = AnimeList
+                    .Where(a => a.Category != null) // Nur Einträge mit Kategorie
+                    .GroupBy(a => a.Category!)
+                    .ToDictionary(g => g.Key, g => g.ToList());
+            }
+            else
             {
-                Title = m.Title.Romaji,
-                CoverImage = m.CoverImage.Large
-            }).ToList();
+                AnimeList = new List<AnimeItem>();
+            }
+        }
+
+        public IActionResult OnPostAddCategory(string? newCategory)
+        {
+            if (!string.IsNullOrEmpty(newCategory) && !Categories.Contains(newCategory))
+            {
+                Categories.Add(newCategory);
+            }
+            return RedirectToPage();
+        }
+
+        public IActionResult OnPostAddAnimeToCategory(string? animeTitle, string? category)
+        {
+            var anime = AnimeList.FirstOrDefault(a => a.Title == animeTitle);
+            if (anime != null && !string.IsNullOrEmpty(category) && Categories.Contains(category))
+            {
+                anime.Category = category;
+                CategorizedAnime = AnimeList
+                    .Where(a => a.Category != null)
+                    .GroupBy(a => a.Category!)
+                    .ToDictionary(g => g.Key, g => g.ToList());
+            }
+            return RedirectToPage();
         }
     }
 
     public class AniListResponse
     {
-        public Data Data { get; set; }
+        public Data? Data { get; set; }
     }
 
     public class Data
     {
-        public Page Page { get; set; }
+        public Page? Page { get; set; }
     }
 
     public class Page
     {
-        public List<Media> Media { get; set; }
+        public List<Media>? Media { get; set; }
     }
 
     public class Media
     {
-        public Title Title { get; set; }
-        public CoverImage CoverImage { get; set; }
+        public Title? Title { get; set; }
+        public CoverImage? CoverImage { get; set; }
     }
 
     public class Title
     {
-        public string Romaji { get; set; }
+        public string? Romaji { get; set; }
     }
 
     public class CoverImage
     {
-        public string Large { get; set; }
+        public string? Large { get; set; }
     }
 }

@@ -8,23 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Lukas\\.nuget\\packages\\": {},
+    "C:\\Users\\PfeifferLukas\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lukas\\.vscode\\Projekt\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj",
+      "projectUniqueName": "C:\\Users\\PfeifferLukas\\.vscode\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj",
       "projectName": "What2Do2Day",
-      "projectPath": "C:\\Users\\Lukas\\.vscode\\Projekt\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj",
-      "packagesPath": "C:\\Users\\Lukas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lukas\\.vscode\\Projekt\\Csharp-Projekt\\What2Do2Day\\obj\\",
+      "projectPath": "C:\\Users\\PfeifferLukas\\.vscode\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj",
+      "packagesPath": "C:\\Users\\PfeifferLukas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PfeifferLukas\\.vscode\\Csharp-Projekt\\What2Do2Day\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Lukas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PfeifferLukas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,7 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

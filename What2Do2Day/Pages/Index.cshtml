@@ -5,6 +5,28 @@
 }
 
 <div class="container mx-auto p-6">
+    <!-- Hamburger Button -->
+    <button id="openSidebar" class="fixed top-4 left-4 z-50 p-2 bg-gray-800 text-white rounded-lg">☰</button>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="fixed top-0 left-0 h-full w-0 bg-gray-900 text-white overflow-x-hidden transition-all duration-300 z-40">
+        <div class="p-4">
+            <h2 class="text-xl font-bold mb-4">Kategorien</h2>
+            <ul>
+                @foreach (var category in Model.Categories)
+                {
+                    <li class="mb-2">
+                        <a href="#" class="block p-2 hover:bg-gray-700 rounded" data-category="@category">@category</a>
+                    </li>
+                }
+            </ul>
+            <form method="post" asp-page-handler="AddCategory" class="mt-4">
+                <input type="text" name="newCategory" placeholder="Neue Kategorie" class="w-full p-2 bg-gray-700 rounded text-white" />
+                <button type="submit" class="mt-2 p-2 bg-blue-500 rounded w-full">Hinzufügen</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Search Bar -->
     <div class="mb-8">
         <input type="text" 
@@ -28,7 +50,11 @@
     <div id="modalOverlay" class="fixed inset-0 bg-black bg-opacity-75 hidden flex items-center justify-center z-50">
         <div id="modalContent" class="bg-gray-900 p-6 rounded-lg max-w-lg w-full max-h-[80vh] overflow-y-auto">
             <h2 id="modalTitle" class="text-2xl font-bold mb-4 text-gray-100"></h2>
-            <img id="modalImage" class="w-full h-48 object-cover rounded-lg mb-4" alt="">
+            <img id="modalImage" class="w-full max-h-64 object-contain rounded-lg mb-4" alt="" /> <!-- Begrenzte Höhe -->
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-gray-200">Trailer</h3>
+                <iframe id="modalTrailer" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+            </div>
             <div class="mb-4">
                 <h3 class="text-xl font-semibold text-gray-200">Description</h3>
                 <p id="modalDescription" class="text-gray-300"></p>
@@ -41,22 +67,40 @@
                 <h3 class="text-xl font-semibold text-gray-200">Rating</h3>
                 <div id="modalRating" class="flex text-yellow-400"></div>
             </div>
+            <form method="post" asp-page-handler="AddAnimeToCategory" class="mt-4">
+                <input type="hidden" name="animeTitle" id="modalAnimeTitle" />
+                <select name="category" class="w-full p-2 bg-gray-700 rounded text-white mb-2">
+                    @foreach (var category in Model.Categories)
+                    {
+                        <option value="@category">@category</option>
+                    }
+                </select>
+                <button type="submit" class="p-2 bg-blue-500 rounded w-full">Zu Kategorie hinzufügen</button>
+            </form>
         </div>
     </div>
 </div>
 
 <script>
+    // Sidebar Handling
+    const openSidebarBtn = document.getElementById('openSidebar');
+    const sidebar = document.getElementById('sidebar');
+    openSidebarBtn.addEventListener('click', () => {
+        sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
+    });
+
     // DOM Elements
     const searchInput = document.getElementById('searchInput');
     const animeGrid = document.getElementById('animeGrid');
     let allAnime = @Html.Raw(Json.Serialize(Model.AnimeList));
     const modalOverlay = document.getElementById('modalOverlay');
-    const modalContent = document.getElementById('modalContent');
     const modalTitle = document.getElementById('modalTitle');
     const modalImage = document.getElementById('modalImage');
+    const modalTrailer = document.getElementById('modalTrailer');
     const modalDescription = document.getElementById('modalDescription');
     const modalGenres = document.getElementById('modalGenres');
     const modalRating = document.getElementById('modalRating');
+    const modalAnimeTitle = document.getElementById('modalAnimeTitle');
 
     // Debounce for search
     function debounce(func, wait) {
@@ -70,90 +114,84 @@
     // Update grid with search
     const updateGrid = debounce(async function () {
         const query = searchInput.value.trim().toLowerCase();
-        if (query.length > 2) {
-            const response = await fetch(`/?searchQuery=${encodeURIComponent(query)}`);
-            if (!response.ok) {
-                console.error('Search fetch failed:', response.status);
-                return;
+        let filteredAnime;
+
+        if (query.length > 0) {
+            const response = await fetch(`/api/Anime/details?title=${encodeURIComponent(query)}`);
+            if (response.ok) {
+                const anime = await response.json();
+                filteredAnime = anime.title === "Not Found" ? [] : [anime];
+            } else {
+                filteredAnime = allAnime.filter(anime => 
+                    anime.title.toLowerCase().includes(query)
+                );
             }
-            const html = await response.text();
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, 'text/html');
-            const newGrid = doc.getElementById('animeGrid').innerHTML;
-            animeGrid.innerHTML = newGrid;
-            allAnime = JSON.parse(doc.querySelector('script').innerText.match(/allAnime = (.+);/)[1]);
-            attachClickHandlers(); // Re-attach handlers after grid update
         } else {
-            const filteredAnime = allAnime.filter(anime => 
-                anime.title.toLowerCase().startsWith(query)
-            );
-            animeGrid.innerHTML = filteredAnime.map(anime => `
-                <div class="anime-card group block bg-gray-800 bg-opacity-50 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:bg-opacity-70 transition duration-300 cursor-pointer" data-title="${encodeURIComponent(anime.title)}">
-                    <img src="${anime.coverImage}" alt="${anime.title}" class="w-full h-48 object-cover">
-                    <p class="p-3 text-center text-sm font-medium text-gray-200 group-hover:text-blue-400">${anime.title}</p>
-                </div>
-            `).join('');
-            attachClickHandlers();
+            filteredAnime = allAnime;
         }
+
+        animeGrid.innerHTML = filteredAnime.map(anime => `
+            <div class="anime-card group block bg-gray-800 bg-opacity-50 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:bg-opacity-70 transition duration-300 cursor-pointer" data-title="${encodeURIComponent(anime.title)}">
+                <img src="${anime.coverImage}" alt="${anime.title}" class="w-full h-48 object-cover">
+                <p class="p-3 text-center text-sm font-medium text-gray-200 group-hover:text-blue-400">${anime.title}</p>
+            </div>
+        `).join('');
+        attachClickHandlers();
     }, 300);
 
     // Attach click handlers to anime cards
     function attachClickHandlers() {
         const animeCards = document.querySelectorAll('.anime-card');
         animeCards.forEach(card => {
-            card.addEventListener('click', () => {
-                const title = card.getAttribute('data-title');
-                showDetails(title);
-            });
+            const title = card.getAttribute('data-title');
+            card.addEventListener('click', () => showDetails(title));
         });
     }
 
     // Show details in modal
-   async function showDetails(encodedTitle) {
-    const title = decodeURIComponent(encodedTitle);
-    console.log('Fetching details for:', title);
-    const url = `/api/Anime/details?title=${encodeURIComponent(title)}`;
-    console.log('API URL:', url);
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`API returned ${response.status}: ${await response.text()}`);
-        }
-        const data = await response.json();
-        console.log('API response:', data);
+    async function showDetails(encodedTitle) {
+        const title = decodeURIComponent(encodedTitle);
+        const url = `/api/Anime/details?title=${encodeURIComponent(title)}`;
+        try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error(`API returned ${response.status}`);
+            const data = await response.json();
 
-        modalTitle.textContent = data.title || 'Unknown Title';
-        modalImage.src = data.coverImage || 'https://via.placeholder.com/150x200?text=No+Image';
-        modalImage.alt = data.title || 'No Title';
-        modalDescription.textContent = data.description || 'No description available';
-        modalGenres.innerHTML = (data.genres || []).map(genre => `<option>${genre}</option>`).join('');
-        
-        const rating = (data.rating || 0) / 20;
-        modalRating.innerHTML = '';
-        for (let i = 1; i <= 5; i++) {
-            const star = document.createElement('span');
-            star.textContent = i <= Math.floor(rating) ? '★' : '☆';
-            star.classList.add('text-2xl');
-            modalRating.appendChild(star);
-        }
+            modalTitle.textContent = data.title || 'Unknown Title';
+            modalImage.src = data.coverImage || 'https://via.placeholder.com/150x200?text=No+Image';
+            modalImage.alt = data.title || 'No Title';
+            modalTrailer.src = data.trailerUrl || '';
+            modalDescription.textContent = data.description || 'No description available';
+            modalGenres.innerHTML = (data.genres || []).map(genre => `<option>${genre}</option>`).join('');
+            modalAnimeTitle.value = data.title;
 
-        modalOverlay.classList.remove('hidden');
-        console.log('Modal should now be visible');
-    } catch (error) {
-        console.error('Error fetching details:', error);
-        modalTitle.textContent = 'Error';
-        modalDescription.textContent = 'Could not load details: ' + error.message;
-        modalImage.src = 'https://via.placeholder.com/150x200?text=Error';
-        modalGenres.innerHTML = '';
-        modalRating.innerHTML = '';
-        modalOverlay.classList.remove('hidden');
+            const rating = (data.rating || 0) / 20;
+            modalRating.innerHTML = '';
+            for (let i = 1; i <= 5; i++) {
+                const star = document.createElement('span');
+                star.textContent = i <= Math.floor(rating) ? '★' : '☆';
+                star.classList.add('text-2xl');
+                modalRating.appendChild(star);
+            }
+
+            modalOverlay.classList.remove('hidden');
+        } catch (error) {
+            console.error('Error fetching details:', error);
+            modalTitle.textContent = 'Error';
+            modalDescription.textContent = 'Could not load details.';
+            modalImage.src = 'https://via.placeholder.com/150x200?text=Error';
+            modalTrailer.src = '';
+            modalGenres.innerHTML = '';
+            modalRating.innerHTML = '';
+            modalOverlay.classList.remove('hidden');
+        }
     }
-}
+
     // Hide modal when clicking outside
     modalOverlay.addEventListener('click', (event) => {
         if (event.target === modalOverlay) {
             modalOverlay.classList.add('hidden');
-            console.log('Modal hidden');
+            modalTrailer.src = '';
         }
     });
 
