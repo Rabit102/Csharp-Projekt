@@ -12,13 +12,13 @@
     <div id="sidebar" class="fixed top-0 left-0 h-full w-0 bg-gray-900 text-white overflow-x-hidden transition-all duration-300 z-40">
         <div class="p-4">
             <h2 class="text-xl font-bold mb-4">Kategorien</h2>
-            <ul>
-                @foreach (var category in Model.Categories)
-                {
-                    <li class="mb-2">
-                        <a href="#" class="block p-2 hover:bg-gray-700 rounded" data-category="@category">@category</a>
-                    </li>
-                }
+<ul>
+    @foreach (var category in Model.Categories)
+    {
+        <li class="mb-2">
+            <a href="#" class="block p-2 hover:bg-gray-700 rounded" data-category="@category">@category</a>
+        </li>
+     }
             </ul>
             <form method="post" asp-page-handler="AddCategory" class="mt-4">
                 <input type="text" name="newCategory" placeholder="Neue Kategorie" class="w-full p-2 bg-gray-700 rounded text-white" />
