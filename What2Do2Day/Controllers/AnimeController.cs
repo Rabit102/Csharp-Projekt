@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using What2Do2Day.Models;
 using System.Net.Http;
 using System.Text.Json;
+using System.Threading.Tasks;
 
 namespace What2Do2Day.Controllers
 {
@@ -17,8 +18,13 @@ namespace What2Do2Day.Controllers
         }
 
         [HttpGet("details")]
-        public async Task<IActionResult> GetDetails(string title)
+        public async Task<IActionResult> GetDetails(string? title)
         {
+            if (string.IsNullOrEmpty(title))
+            {
+                return BadRequest("Title is required.");
+            }
+
             var client = _httpClientFactory.CreateClient("AniList");
 
             string query = @"
@@ -48,7 +54,10 @@ namespace What2Do2Day.Controllers
                 "application/json");
 
             var response = await client.PostAsync("", content);
-            response.EnsureSuccessStatusCode();
+            if (!response.IsSuccessStatusCode)
+            {
+                return StatusCode((int)response.StatusCode);
+            }
 
             var jsonResponse = await response.Content.ReadAsStringAsync();
             var aniListResponse = JsonSerializer.Deserialize<AniListDetailResponse>(jsonResponse, new JsonSerializerOptions
@@ -56,47 +65,52 @@ namespace What2Do2Day.Controllers
                 PropertyNameCaseInsensitive = true
             });
 
-            var media = aniListResponse.Data.Media;
-            var result = media != null ? new AnimeItem
+            var media = aniListResponse?.Data?.Media;
+            if (media == null)
             {
-                Title = media.Title.Romaji,
-                CoverImage = media.CoverImage.Large,
+                return Ok(new AnimeItem { Title = "Not Found" });
+            }
+
+            var result = new AnimeItem
+            {
+                Title = media.Title?.Romaji,
+                CoverImage = media.CoverImage?.Large,
                 Description = media.Description,
                 Genres = media.Genres,
-                Rating = media.AverageScore
-            } : new AnimeItem { Title = "Not Found" };
+                Rating = media.AverageScore,
+                TrailerUrl = $"https://www.crunchyroll.com/de/videos/{(media.Title?.Romaji ?? "unknown").ToLower().Replace(" ", "-")}/trailer"
+            };
 
             return Ok(result);
         }
     }
 
-    // Same helper classes as before
     public class AniListDetailResponse
     {
-        public Data Data { get; set; }
+        public Data? Data { get; set; }
     }
 
     public class Data
     {
-        public Media Media { get; set; }
+        public Media? Media { get; set; }
     }
 
     public class Media
     {
-        public Title Title { get; set; }
-        public CoverImage CoverImage { get; set; }
-        public string Description { get; set; }
-        public string[] Genres { get; set; }
+        public Title? Title { get; set; }
+        public CoverImage? CoverImage { get; set; }
+        public string? Description { get; set; }
+        public string[]? Genres { get; set; }
         public double AverageScore { get; set; }
     }
 
     public class Title
     {
-        public string Romaji { get; set; }
+        public string? Romaji { get; set; }
     }
 
     public class CoverImage
     {
-        public string Large { get; set; }
+        public string? Large { get; set; }
     }
 }
