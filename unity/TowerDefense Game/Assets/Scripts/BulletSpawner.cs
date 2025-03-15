@@ -5,14 +5,22 @@ using UnityEngine.Scripting.APIUpdating;
 
 public class BulletSpawner : MonoBehaviour
 {
+
+    public static BulletSpawner Instance;
+
     [Header("SpawnSettings")]
     public GameObject bulletPrefab;
     public float spawnInterval = 1.5f;
     public int bulletsPerWave = 20;
     private int bulletsSpawned = 0;
+    public float bulletSpeedMultiplier = 1f;
+    public float baseBulletSpeed = 5f;
 
+    void Awake()
+    {
+        Instance = this;
+    }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
     {
         StartCoroutine(SpawnWave());
@@ -28,6 +36,13 @@ public class BulletSpawner : MonoBehaviour
             yield return new WaitForSeconds(spawnInterval);
         }
         GameManager.Instance.WaveCompleted();
+    }
+
+    public void ResetSpawner()
+    {
+        bulletsSpawned = 0;
+        bulletSpeedMultiplier = 1f;
+        StopAllCoroutines();
     }
 
     void SpawnBullet()
@@ -71,10 +86,6 @@ public class BulletSpawner : MonoBehaviour
             }
         }
         
-        bulletScript.speed += GameManager.Instance.currentWave * 0.5f;
+        bulletScript.speed += (baseBulletSpeed + GameManager.Instance.currentWave * 0.5f) * bulletSpeedMultiplier;
     }
-
-    // Update is called once per frame
-    void Update()
-    { }
 }

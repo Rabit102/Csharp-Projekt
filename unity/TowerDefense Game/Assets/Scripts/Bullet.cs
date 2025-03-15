@@ -13,7 +13,6 @@ public class Bullet : MonoBehaviour
 
     private Transform towerTransform;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         GameObject tower = GameObject.FindWithTag("Tower");
@@ -21,7 +20,6 @@ public class Bullet : MonoBehaviour
         UpdateRotation();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(isDecoy && towerTransform != null)
@@ -48,8 +46,7 @@ public class Bullet : MonoBehaviour
         else if (collision.CompareTag("Tower"))
         {
             Destroy(gameObject);
-            Debug.Log("GameOver ");
-            GameManager.Instance.GameOver();
+            GameManager.Instance.tower.TakeDamage(1);
         }
     }
     void UpdateRotation()

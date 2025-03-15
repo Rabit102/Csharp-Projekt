@@ -12,8 +12,9 @@ public class GameManager : MonoBehaviour
     public int totalWaves = 10;
     public int currentWave = 1;
 
-    [Header("SpawnerLink")]
+    [Header("References")]
     public BulletSpawner bulletSpawner;
+    public Tower tower;
 
     [Header("UIElements")]
     public TextMeshProUGUI waveText;
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Other")]
     public int score = 0;
+    public float scoreMultiplier = 1f;
 
     void Awake()
     {
@@ -36,13 +38,13 @@ public class GameManager : MonoBehaviour
 
     public void AddScore(int amount)
     {
-        score += amount;
+        score += Mathf.RoundToInt(amount * scoreMultiplier);
         UpdateUI();
     }
 
     public void WaveCompleted()
     {
-        if(currentWave <= totalWaves)
+        if(currentWave < totalWaves)
         {
             currentWave++;
             
@@ -78,10 +80,27 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            finalMessageText.text = "Tower destroyed!";
-            upgradePanel.SetActive(true);
+            finalMessageText.text = "Tower destroyed!\nTry Again";
         }
     }
+
+    public void RestartGame()
+{
+    currentWave = 1;
+    score = 0;
+    scoreMultiplier = 1f;
+
+    foreach (var upgrade in UpgradeManager.Instance.upgrades)
+    {
+        upgrade.currentLevel = 0;
+    }
+
+    tower.ResetTower();
+    bulletSpawner.ResetSpawner();
+
+    Time.timeScale = 1;
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+}
 
     void UpdateUI()
         {
@@ -94,11 +113,4 @@ public class GameManager : MonoBehaviour
                 scoreText.text = "Score: " + score;
             }
         }
-
-
-
-    void Update()
-    {
-        
-    }
 }

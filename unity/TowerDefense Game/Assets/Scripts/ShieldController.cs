@@ -8,17 +8,12 @@ public class ShieldController : MonoBehaviour
 
     private Vector2 targetPosition;
 
-
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         targetPosition = new Vector2(distance, 0);
         transform.localPosition = targetPosition;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
@@ -40,6 +35,19 @@ public class ShieldController : MonoBehaviour
         {
             targetPosition = new Vector2(distance, 0);
             transform.rotation = Quaternion.Euler(0, 0, 360);
+        }
+        else if (Input.GetKeyDown(KeyCode.R))
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                bool isActive = GameManager.Instance.upgradePanel.activeSelf;
+                GameManager.Instance.upgradePanel.SetActive(!isActive);
+                Time.timeScale = isActive ? 1 : 0;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Q))
+        {
+            GameManager.Instance.RestartGame();
         }
 
         transform.localPosition = Vector2.MoveTowards(transform.localPosition, targetPosition, moveSpeed * Time.deltaTime);
