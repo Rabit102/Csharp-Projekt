@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      knopka_0: -7470248178995748915
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
