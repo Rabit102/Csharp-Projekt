@@ -4,12 +4,20 @@
 winexe
 C#
 .cs
+<<<<<<< Updated upstream
 C:\Users\noobe\Documents\GitHub\Csharp-Projekt\launcher\Launcher\obj\Release\
+=======
+C:\Users\SattlerClemens\Documents\GitHub\Csharp-Projekt\launcher\Launcher\obj\Release\
+>>>>>>> Stashed changes
 Launcher
 none
 false
 TRACE
+<<<<<<< Updated upstream
 C:\Users\noobe\Documents\GitHub\Csharp-Projekt\launcher\Launcher\App.xaml
+=======
+C:\Users\SattlerClemens\Documents\GitHub\Csharp-Projekt\launcher\Launcher\App.xaml
+>>>>>>> Stashed changes
 22080152624
 
 7-106497852

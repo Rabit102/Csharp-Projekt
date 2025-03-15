@@ -27,4 +27,11 @@ public class PauseMenuCode : MonoBehaviour
         SceneManager.LoadScene("LevelAuswahl");
         Time.timeScale = 1f;
     }
+
+    public void OnRestartClick()
+    {
+        SceneManager.LoadScene("LevelAuswahl");
+        Time.timeScale = 1f;
+
+    }
 }

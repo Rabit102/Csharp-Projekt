@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6664795638203229123}
   - component: {fileID: 3381255846279916938}
   - component: {fileID: 2344753433104592954}
+  - component: {fileID: 294676318908132213}
   m_Layer: 0
   m_Name: End
   m_TagString: Untagged
@@ -67,7 +68,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0013969541, y: -0.0041970387}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -77,7 +78,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.4879822, y: 0.46559757}
   m_EdgeRadius: 0
 --- !u!212 &2344753433104592954
 SpriteRenderer:
@@ -134,3 +135,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &294676318908132213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6703050954168012398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b095066d7d4d044f8616ffd7912f841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectedSound: {fileID: 8300000, guid: ee18de2329968484da6cdc804ba02a43, type: 3}
+  level: {fileID: 0}

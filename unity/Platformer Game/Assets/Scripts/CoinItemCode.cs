@@ -21,6 +21,7 @@ public class CoinItemCode : MonoBehaviour
             AudioCode.instance.PlaySound(collectedSound);
             player.coins++;
             Destroy(gameObject);
+            Debug.Log(player.coins);
             coinstext.text = player.coins.ToString("000");
         }
     }

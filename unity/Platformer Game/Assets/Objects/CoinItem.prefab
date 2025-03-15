@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectedSound: {fileID: 8300000, guid: ee18de2329968484da6cdc804ba02a43, type: 3}
+  coinstext: {fileID: 0}
 --- !u!70 &1198208739333486867
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
