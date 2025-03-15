@@ -54,8 +54,8 @@
 
         <TextBlock Text="What2DoToday" Grid.ColumnSpan="4" Grid.RowSpan="2" Style="{StaticResource textBlockDesign}"/>
 
-        <Button Grid.Row="2" Grid.ColumnSpan="4" Content="Spielen?" Click="Button_Click"/>
-        <Button Grid.Row="3" Grid.ColumnSpan="4" Content="Was Sonstiges?" Click="Button_Click_1"/>
+        <Button Grid.Row="2" Grid.ColumnSpan="4" Content="Was Sonstiges?" Click="Button_Click"/>
+        <Button Grid.Row="3" Grid.ColumnSpan="4" Content="Spielen?" Click="Button_Click_1"/>
 
     </Grid>
 </Window>

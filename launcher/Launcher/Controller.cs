@@ -12,7 +12,7 @@ namespace Launcher
     public class Controller
     {
         string pathPlatformer = Path.GetFullPath(@"..\..\..\..\unity\Games\Platformer Game.exe");
-        string pathTower = Path.GetFullPath(@"..\..\..\..\unity\Games\2d simple game nr 1.exe");
+        string pathTower = Path.GetFullPath(@"..\..\..\..\unity\Games\heartgame \2d simple game nr 1.exe");
 
         public void Open()
         {
