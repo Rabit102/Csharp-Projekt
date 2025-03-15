@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            finalMessageText.text = "Tower destroyed!\nTry Again";
+            finalMessageText.text = "Your heart is destroyed!\nTry Again (Press Q)";
         }
     }
 

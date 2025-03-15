@@ -8,6 +8,9 @@
 [Oo]bj/
 [Tt]emp/
 [Uu]nityGenerated/
+UserSettings/Layouts/*
+*.dwlt
+
 # file on crash reports
 sysinfo.txt
 # Unity3D generated meta files
