@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PfeifferLukas\\.vscode\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj": {}
+    "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PfeifferLukas\\.vscode\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj": {
+    "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PfeifferLukas\\.vscode\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj",
+        "projectUniqueName": "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj",
         "projectName": "What2Do2Day",
-        "projectPath": "C:\\Users\\PfeifferLukas\\.vscode\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj",
-        "packagesPath": "C:\\Users\\PfeifferLukas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PfeifferLukas\\.vscode\\Csharp-Projekt\\What2Do2Day\\obj\\",
+        "projectPath": "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj",
+        "packagesPath": "C:\\Users\\noobe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\What2Do2Day\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\PfeifferLukas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\noobe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

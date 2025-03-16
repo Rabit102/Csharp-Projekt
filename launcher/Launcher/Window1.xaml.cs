@@ -26,23 +26,23 @@ namespace Launcher
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ((Controller1)this.DataContext).OpenPlatformer();
+            ((Controller)this.DataContext).OpenPlatformer();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
-            ((Controller1)this.DataContext).OpenTowerDef();
+            ((Controller)this.DataContext).OpenTowerDef();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            ((Controller1)this.DataContext).OpenCasino();
+            ((Controller)this.DataContext).OpenCasino();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            Window wi = new Window1();
+            Window wi = new MainWindow();
             wi.Show();
             this.Close();
         }
