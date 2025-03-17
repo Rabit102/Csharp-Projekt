@@ -65,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         betweenAttack += Time.deltaTime;
         Crawl();
         if (rolling)
@@ -174,7 +175,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IdleBlock", false);
         }
 
-        else if (Input.GetKeyDown("left shift") && !rolling)
+        else if ((Input.GetKeyDown("left shift") || Input.GetKeyDown(KeyCode.DownArrow)) && !rolling)
         {
             rollCurrentTime = 0;
             rolling = true;
@@ -183,13 +184,13 @@ public class PlayerMovement : MonoBehaviour
             rigidbody.linearVelocity = new Vector2(direction * rollingForce, rigidbody.linearVelocity.y);
         }
 
-        else if (Input.GetKeyDown("space") && grounded)
+        else if ((Input.GetKeyDown("space") || Input.GetKeyDown(KeyCode.UpArrow)) && grounded)
         {
             jump();
             extrajump = true;
         }
 
-        else if(Input.GetKeyDown("space") && !grounded && extrajump)
+        else if((Input.GetKeyDown("space") || Input.GetKeyDown(KeyCode.UpArrow)) && !grounded && extrajump)
         {
             jump();
             extrajump = false;
