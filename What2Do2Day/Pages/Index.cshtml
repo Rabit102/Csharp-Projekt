@@ -5,52 +5,57 @@
 }
 
 <div class="container mx-auto p-6">
-    <!-- Hamburger Button -->
+    <!-- Sidebar toggle button -->
     <button id="openSidebar" class="fixed top-4 left-4 z-50 p-2 bg-gray-800 text-white rounded-lg">☰</button>
 
-    <!-- Sidebar -->
+    <!-- Sidebar with category dropdowns -->
     <div id="sidebar" class="fixed top-0 left-0 h-full w-0 bg-gray-900 text-white overflow-x-hidden transition-all duration-300 z-40">
         <div class="p-4">
-            <h2 class="text-xl font-bold mb-4">Kategorien</h2>
-<ul>
-    @foreach (var category in Model.Categories)
-    {
-        <li class="mb-2">
-            <a href="#" class="block p-2 hover:bg-gray-700 rounded" data-category="@category">@category</a>
-        </li>
-     }
+            <h2 class="text-xl font-bold mb-4">Categories</h2>
+            <ul>
+                @foreach (var category in Model.Categories)
+                {
+                    <li class="mb-2">
+                        <a href="#" class="block p-2 hover:bg-gray-700 rounded category-toggle" data-category="@category">@category</a>
+                        <div class="category-dropdown hidden bg-gray-800 p-2 rounded mt-1">
+                            @foreach (var anime in Model.AnimeList.Where(a => a.Category == category))
+                            {
+                                <div class="p-1 hover:bg-gray-700 text-sm">@anime.Title</div>
+                            }
+                        </div>
+                    </li>
+                }
             </ul>
             <form method="post" asp-page-handler="AddCategory" class="mt-4">
-                <input type="text" name="newCategory" placeholder="Neue Kategorie" class="w-full p-2 bg-gray-700 rounded text-white" />
-                <button type="submit" class="mt-2 p-2 bg-blue-500 rounded w-full">Hinzufügen</button>
+                <input type="text" name="newCategory" placeholder="New Category" class="w-full p-2 bg-gray-700 rounded text-white" />
+                <button type="submit" class="mt-2 p-2 bg-blue-500 rounded w-full">Add</button>
             </form>
         </div>
     </div>
 
-    <!-- Search Bar -->
+    <!-- Search bar -->
     <div class="mb-8">
-        <input type="text" 
-               id="searchInput"
-               placeholder="Search for an anime (e.g., HxH)..." 
-               class="w-full max-w-lg mx-auto block p-3 rounded-lg bg-gray-800 bg-opacity-70 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300" />
+        <input type="text" id="searchInput" placeholder="Search anime..." 
+               class="w-full max-w-lg mx-auto block p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
     </div>
 
-    <!-- Anime Grid -->
+    <!-- Anime grid -->
     <div id="animeGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-        @foreach (var animeItem in Model.AnimeList)
+        @foreach (var anime in Model.AnimeList)
         {
-            <div class="anime-card group block bg-gray-800 bg-opacity-50 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:bg-opacity-70 transition duration-300 cursor-pointer" data-title="@Uri.EscapeDataString(animeItem.Title)">
-                <img src="@animeItem.CoverImage" alt="@animeItem.Title" class="w-full h-48 object-cover">
-                <p class="p-3 text-center text-sm font-medium text-gray-200 group-hover:text-blue-400">@animeItem.Title</p>
+            <div class="anime-card group bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-300 cursor-pointer" 
+                 data-title="@Uri.EscapeDataString(anime.Title)">
+                <img src="@anime.CoverImage" alt="@anime.Title" class="w-full h-48 object-cover">
+                <p class="p-3 text-center text-sm text-gray-200 group-hover:text-blue-400">@anime.Title</p>
             </div>
         }
     </div>
 
-    <!-- Modal Overlay -->
+    <!-- Modal for anime details -->
     <div id="modalOverlay" class="fixed inset-0 bg-black bg-opacity-75 hidden flex items-center justify-center z-50">
         <div id="modalContent" class="bg-gray-900 p-6 rounded-lg max-w-lg w-full max-h-[80vh] overflow-y-auto">
             <h2 id="modalTitle" class="text-2xl font-bold mb-4 text-gray-100"></h2>
-            <img id="modalImage" class="w-full max-h-64 object-contain rounded-lg mb-4" alt="" /> <!-- Begrenzte Höhe -->
+            <img id="modalImage" class="w-full max-h-64 object-contain rounded-lg mb-4" alt="" />
             <div class="mb-4">
                 <h3 class="text-xl font-semibold text-gray-200">Trailer</h3>
                 <iframe id="modalTrailer" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
@@ -61,7 +66,7 @@
             </div>
             <div class="mb-4">
                 <h3 class="text-xl font-semibold text-gray-200">Genres</h3>
-                <select id="modalGenres" class="w-full p-2 bg-gray-700 bg-opacity-80 text-white rounded-lg border border-gray-600 hover:bg-opacity-100 transition duration-300"></select>
+                <select id="modalGenres" class="w-full p-2 bg-gray-700 text-white rounded-lg"></select>
             </div>
             <div class="mb-4">
                 <h3 class="text-xl font-semibold text-gray-200">Rating</h3>
@@ -75,65 +80,63 @@
                         <option value="@category">@category</option>
                     }
                 </select>
-                <button type="submit" class="p-2 bg-blue-500 rounded w-full">Zu Kategorie hinzufügen</button>
+                <button type="submit" class="p-2 bg-blue-500 rounded w-full">Add to Category</button>
             </form>
         </div>
     </div>
 </div>
 
 <script>
-    // Sidebar Handling
+    // DOM elements
     const openSidebarBtn = document.getElementById('openSidebar');
     const sidebar = document.getElementById('sidebar');
+    const searchInput = document.getElementById('searchInput');
+    const animeGrid = document.getElementById('animeGrid');
+    const modalOverlay = document.getElementById('modalOverlay');
+    let allAnime = @Html.Raw(Json.Serialize(Model.AnimeList));
+
+    // Toggle sidebar
     openSidebarBtn.addEventListener('click', () => {
         sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
     });
 
-    // DOM Elements
-    const searchInput = document.getElementById('searchInput');
-    const animeGrid = document.getElementById('animeGrid');
-    let allAnime = @Html.Raw(Json.Serialize(Model.AnimeList));
-    const modalOverlay = document.getElementById('modalOverlay');
-    const modalTitle = document.getElementById('modalTitle');
-    const modalImage = document.getElementById('modalImage');
-    const modalTrailer = document.getElementById('modalTrailer');
-    const modalDescription = document.getElementById('modalDescription');
-    const modalGenres = document.getElementById('modalGenres');
-    const modalRating = document.getElementById('modalRating');
-    const modalAnimeTitle = document.getElementById('modalAnimeTitle');
+    // Toggle category dropdowns
+    document.querySelectorAll('.category-toggle').forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            const dropdown = toggle.nextElementSibling;
+            // Hide all other dropdowns
+            document.querySelectorAll('.category-dropdown').forEach(d => {
+                if (d !== dropdown) d.classList.add('hidden');
+            });
+            // Toggle the clicked dropdown
+            dropdown.classList.toggle('hidden');
+        });
+    });
 
-    // Debounce for search
-    function debounce(func, wait) {
+    // Debounce function for search
+    const debounce = (func, wait) => {
         let timeout;
-        return function (...args) {
+        return (...args) => {
             clearTimeout(timeout);
             timeout = setTimeout(() => func.apply(this, args), wait);
         };
-    }
+    };
 
-    // Update grid with search
-    const updateGrid = debounce(async function () {
+    // Update anime grid based on search
+    const updateGrid = debounce(async () => {
         const query = searchInput.value.trim().toLowerCase();
-        let filteredAnime;
-
-        if (query.length > 0) {
-            const response = await fetch(`/api/Anime/details?title=${encodeURIComponent(query)}`);
-            if (response.ok) {
-                const anime = await response.json();
-                filteredAnime = anime.title === "Not Found" ? [] : [anime];
-            } else {
-                filteredAnime = allAnime.filter(anime => 
-                    anime.title.toLowerCase().includes(query)
-                );
-            }
-        } else {
-            filteredAnime = allAnime;
-        }
+        let filteredAnime = query.length > 0
+            ? (await fetch(`/api/Anime/details?title=${encodeURIComponent(query)}`)
+                .then(r => r.json())
+                .then(anime => anime.title === "Not Found" ? [] : [anime]))
+            : allAnime;
 
         animeGrid.innerHTML = filteredAnime.map(anime => `
-            <div class="anime-card group block bg-gray-800 bg-opacity-50 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:bg-opacity-70 transition duration-300 cursor-pointer" data-title="${encodeURIComponent(anime.title)}">
+            <div class="anime-card group bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition duration-300 cursor-pointer" 
+                 data-title="${encodeURIComponent(anime.title)}">
                 <img src="${anime.coverImage}" alt="${anime.title}" class="w-full h-48 object-cover">
-                <p class="p-3 text-center text-sm font-medium text-gray-200 group-hover:text-blue-400">${anime.title}</p>
+                <p class="p-3 text-center text-sm text-gray-200 group-hover:text-blue-400">${anime.title}</p>
             </div>
         `).join('');
         attachClickHandlers();
@@ -141,57 +144,35 @@
 
     // Attach click handlers to anime cards
     function attachClickHandlers() {
-        const animeCards = document.querySelectorAll('.anime-card');
-        animeCards.forEach(card => {
-            const title = card.getAttribute('data-title');
-            card.addEventListener('click', () => showDetails(title));
+        document.querySelectorAll('.anime-card').forEach(card => {
+            card.addEventListener('click', () => showDetails(card.getAttribute('data-title')));
         });
     }
 
-    // Show details in modal
+    // Show anime details in modal
     async function showDetails(encodedTitle) {
         const title = decodeURIComponent(encodedTitle);
-        const url = `/api/Anime/details?title=${encodeURIComponent(title)}`;
-        try {
-            const response = await fetch(url);
-            if (!response.ok) throw new Error(`API returned ${response.status}`);
-            const data = await response.json();
+        const data = await fetch(`/api/Anime/details?title=${encodeURIComponent(title)}`).then(r => r.json());
 
-            modalTitle.textContent = data.title || 'Unknown Title';
-            modalImage.src = data.coverImage || 'https://via.placeholder.com/150x200?text=No+Image';
-            modalImage.alt = data.title || 'No Title';
-            modalTrailer.src = data.trailerUrl || '';
-            modalDescription.textContent = data.description || 'No description available';
-            modalGenres.innerHTML = (data.genres || []).map(genre => `<option>${genre}</option>`).join('');
-            modalAnimeTitle.value = data.title;
+        document.getElementById('modalTitle').textContent = data.title;
+        document.getElementById('modalImage').src = data.coverImage;
+        document.getElementById('modalTrailer').src = data.trailerUrl || ''; // Use embed URL directly
+        document.getElementById('modalDescription').textContent = data.description || 'No description';
+        document.getElementById('modalGenres').innerHTML = (data.genres || []).map(g => `<option>${g}</option>`).join('');
+        document.getElementById('modalAnimeTitle').value = data.title;
 
-            const rating = (data.rating || 0) / 20;
-            modalRating.innerHTML = '';
-            for (let i = 1; i <= 5; i++) {
-                const star = document.createElement('span');
-                star.textContent = i <= Math.floor(rating) ? '★' : '☆';
-                star.classList.add('text-2xl');
-                modalRating.appendChild(star);
-            }
+        const rating = Math.floor(data.rating / 20);
+        document.getElementById('modalRating').innerHTML = Array(5).fill()
+            .map((_, i) => `<span class="text-2xl">${i < rating ? '★' : '☆'}</span>`).join('');
 
-            modalOverlay.classList.remove('hidden');
-        } catch (error) {
-            console.error('Error fetching details:', error);
-            modalTitle.textContent = 'Error';
-            modalDescription.textContent = 'Could not load details.';
-            modalImage.src = 'https://via.placeholder.com/150x200?text=Error';
-            modalTrailer.src = '';
-            modalGenres.innerHTML = '';
-            modalRating.innerHTML = '';
-            modalOverlay.classList.remove('hidden');
-        }
+        modalOverlay.classList.remove('hidden');
     }
 
-    // Hide modal when clicking outside
-    modalOverlay.addEventListener('click', (event) => {
-        if (event.target === modalOverlay) {
+    // Close modal when clicking outside
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) {
             modalOverlay.classList.add('hidden');
-            modalTrailer.src = '';
+            document.getElementById('modalTrailer').src = '';
         }
     });
 
