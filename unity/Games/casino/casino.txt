@@ -1,0 +1,26 @@
+Casino!
+===============================
+
+Balance: 10$
+
+Slots:
+>>>>>>>>>>>
+X|G|F
+F|F|F
+F|G|X
+>>>>>>>>>>> you won! (nothing)
+
+Blackjack:
+>>>>>>>>>>>>
+Your cards:
+|8| |9| |7|
+Dealer cards:
+|10| |A|
+>>>>>>>>>>>> unfortunately, lose. (all your balance)
+
+Dice:
+>>>>>>>>>>>>
+Your predict: exact 7
+Dices says:
+|3| |3|
+>>>>>>>>>>>> unfortunately, lose again. (everything what you have)

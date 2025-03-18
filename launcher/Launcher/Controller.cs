@@ -16,7 +16,7 @@ namespace Launcher
         string pathTower = Path.GetFullPath(@"..\..\..\..\unity\Games\heartgame\2d simple game nr 1.exe");
         string pathSiteHost = Path.GetFullPath(@"..\..\..\..\What2Do2Day");
         string pathSite = ("http://localhost:5086/");
-        string pathCasino = Path.GetFullPath(@"..\..\..\..\unity\Games\Platformer Game.exe");
+        string pathCasino = Path.GetFullPath(@"..\..\..\..\unity\Games\casino\casino.txt");
 
         public void OpenSite() 
         {

@@ -3,23 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\launcher\\Launcher\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\launcher\\Launcher\\Controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|solutionrelative:Controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|c:\\users\\noobe\\documents\\github\\csharp-projekt\\launcher\\launcher\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|c:\\users\\noobe\\documents\\github\\csharp-projekt\\launcher\\launcher\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|c:\\users\\noobe\\documents\\github\\csharp-projekt\\launcher\\launcher\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|solutionrelative:controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\launcher\\Launcher\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\launcher\\Launcher\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|solutionrelative:MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\launcher\\Launcher\\Window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|solutionrelative:Window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|c:\\users\\noobe\\documents\\github\\csharp-projekt\\launcher\\launcher\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\launcher\\Launcher\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{17F77347-1BF8-47A3-BD5E-CCEED7668D65}|Launcher.csproj|solutionrelative:window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\launcher\\Launcher\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -59,8 +59,7 @@
               "RelativeToolTip": "Window1.xaml.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T08:28:03.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T08:28:03.975Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "ToolTip": "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\launcher\\Launcher\\Window1.xaml",
               "RelativeToolTip": "Window1.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T10:57:16.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T10:57:16.479Z"
             }
           ]
         },
@@ -82,28 +80,27 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Controller.cs",
               "DocumentMoniker": "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\launcher\\Launcher\\Controller.cs",
               "RelativeDocumentMoniker": "Controller.cs",
               "ToolTip": "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\launcher\\Launcher\\Controller.cs",
               "RelativeToolTip": "Controller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T10:53:05.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\launcher\\Launcher\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\launcher\\Launcher\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-24T10:51:42.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T10:51:42.866Z"
             }
           ]
         }
