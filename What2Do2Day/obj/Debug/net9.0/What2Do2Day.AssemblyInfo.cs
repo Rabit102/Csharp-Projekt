@@ -20,7 +20,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 // Создано классом WriteCodeFragment MSBuild.
+=======
+// Von der MSBuild WriteCodeFragment-Klasse generiert.
+>>>>>>> Stashed changes
 =======
 // Von der MSBuild WriteCodeFragment-Klasse generiert.
 >>>>>>> Stashed changes
