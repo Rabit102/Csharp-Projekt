@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LevelManagerCode : MonoBehaviour
+public class LevelAuswahlCode : MonoBehaviour
 {
     public bool unlocked = false;
     public Button button;

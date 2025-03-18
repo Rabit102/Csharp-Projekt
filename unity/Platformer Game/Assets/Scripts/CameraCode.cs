@@ -14,7 +14,7 @@ public class CameraCode : MonoBehaviour
 
     private void Update()
     {
-        transform.position = new Vector3(player.position.x + lookahead, player.position.y + 4, transform.position.z);
+        transform.position = new Vector3(player.position.x + lookahead, player.position.y, transform.position.z);
         lookahead = Mathf.Lerp(lookahead,(ahead * player.localScale.x), Time.deltaTime* camearaSpeed);
     }
 

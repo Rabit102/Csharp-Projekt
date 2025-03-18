@@ -12,7 +12,7 @@ namespace Launcher
 {
     public class Controller
     {
-        string pathPlatformer = Path.GetFullPath(@"..\..\..\..\unity\Games\Platformer Game.exe");
+        string pathPlatformer = Path.GetFullPath(@"..\..\..\..\unity\Games\Knight Adventure.exe");
         string pathTower = Path.GetFullPath(@"..\..\..\..\unity\Games\heartgame\2d simple game nr 1.exe");
         string pathSiteHost = Path.GetFullPath(@"..\..\..\..\What2Do2Day");
         string pathSite = ("http://localhost:5086/");

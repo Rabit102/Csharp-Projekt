@@ -9321,6 +9321,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9100000, guid: 3c2a5b7097b0fe44394328c0bdb9252e, type: 2}
     - target: {fileID: 7461154439695636379, guid: af506cc9c7e05294888e1657e10c333c, type: 3}
+      propertyPath: healthCode
+      value: 
+      objectReference: {fileID: 1278195303}
+    - target: {fileID: 7461154439695636379, guid: af506cc9c7e05294888e1657e10c333c, type: 3}
       propertyPath: pauseMenuCode
       value: 
       objectReference: {fileID: 1664108513}
@@ -9549,6 +9553,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7911694575923540555, guid: af506cc9c7e05294888e1657e10c333c, type: 3}
   m_PrefabInstance: {fileID: 1102586698}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1278195303 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2347295987412857566, guid: cdc451504cd42c342a6d96d3dd0cd823, type: 3}
+  m_PrefabInstance: {fileID: 2063739403}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3f0d1c0a6938a4e9023e2060d4f84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1305420259
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class EndCode : MonoBehaviour
 {
     [SerializeField] AudioClip collectedSound;
-    public LevelManagerCode level;
+    public LevelAuswahlCode level;
     public HighscoreCode highscoreCode;
 
     private void OnTriggerEnter2D(Collider2D collision)

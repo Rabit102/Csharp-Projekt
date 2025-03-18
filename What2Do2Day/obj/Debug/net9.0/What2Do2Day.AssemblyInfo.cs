@@ -14,18 +14,10 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("What2Do2Day")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01defaa5013f565d23bfec6c2f41868bcc039e37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d81f58ca2fbebc771a687043783833330831eb9f")]
 [assembly: System.Reflection.AssemblyProductAttribute("What2Do2Day")]
 [assembly: System.Reflection.AssemblyTitleAttribute("What2Do2Day")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-// Создано классом WriteCodeFragment MSBuild.
-=======
 // Von der MSBuild WriteCodeFragment-Klasse generiert.
->>>>>>> Stashed changes
-=======
-// Von der MSBuild WriteCodeFragment-Klasse generiert.
->>>>>>> Stashed changes
 

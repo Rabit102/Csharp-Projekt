@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|c:\\users\\cleme\\desktop\\school\\csharp\\progs\\csharp-projekt\\unity\\platformer game\\assets\\scripts\\highscorecode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\levelauswahlcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelauswahlcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\endcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\highscorecode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highscorecode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\cameracode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\trapcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\trapcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\coinitemcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,15 +35,7 @@
       "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausemenucode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\endcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|c:\\users\\cleme\\desktop\\school\\csharp\\progs\\csharp-projekt\\unity\\platformer game\\assets\\scripts\\counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\counter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -40,22 +52,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\playermenucode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermenucode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\cameracode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\levelauswahlcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelauswahlcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\levelmanagercode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelmanagercode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\assets\\scripts\\trapcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9DBB345-3427-76DE-580F-CD28B7E19555}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\trapcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,7 +61,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -73,7 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "HighscoreCode.cs",
               "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HighscoreCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HighscoreCode.cs",
@@ -86,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Counter.cs",
               "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\Counter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Counter.cs",
@@ -94,12 +90,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Counter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T18:28:39.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T18:28:39.598Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "HeroKnight.cs",
               "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Hero Knight - Pixel Art\\Demo\\HeroKnight.cs",
               "RelativeDocumentMoniker": "Assets\\Hero Knight - Pixel Art\\Demo\\HeroKnight.cs",
@@ -111,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\cleme\\Downloads\\TutorialPlatformer2D-master\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Downloads\\TutorialPlatformer2D-master\\Assets\\Scripts\\PlayerController.cs",
@@ -124,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "HealthbarCode.cs",
               "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\HealthbarCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealthbarCode.cs",
@@ -136,19 +131,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "CameraCode.cs",
               "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\CameraCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraCode.cs",
               "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\CameraCode.cs",
               "RelativeToolTip": "Assets\\Scripts\\CameraCode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAB1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-16T12:44:18.501Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "PlayerMenuCode.cs",
               "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\PlayerMenuCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMenuCode.cs",
@@ -160,31 +155,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LevelManagerCode.cs",
-              "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\LevelManagerCode.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelManagerCode.cs",
-              "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\LevelManagerCode.cs",
-              "RelativeToolTip": "Assets\\Scripts\\LevelManagerCode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T11:48:41.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "LevelAuswahlCode.cs",
               "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\LevelAuswahlCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LevelAuswahlCode.cs",
               "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\LevelAuswahlCode.cs",
               "RelativeToolTip": "Assets\\Scripts\\LevelAuswahlCode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:55:42.299Z"
+              "WhenOpened": "2025-03-15T10:55:42.299Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
@@ -197,20 +181,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "EndCode.cs",
               "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\EndCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EndCode.cs",
               "ToolTip": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\EndCode.cs",
               "RelativeToolTip": "Assets\\Scripts\\EndCode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T10:38:54.367Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
               "Title": "TrapCode.cs",
               "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\TrapCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TrapCode.cs",
@@ -222,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "PauseMenuCode.cs",
               "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\PauseMenuCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PauseMenuCode.cs",
@@ -230,12 +214,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PauseMenuCode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:44:59.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T10:44:59.692Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "CoinItemCode.cs",
               "DocumentMoniker": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\unity\\Platformer Game\\Assets\\Scripts\\CoinItemCode.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CoinItemCode.cs",
@@ -243,8 +226,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CoinItemCode.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwBgAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T08:42:59.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T08:42:59.496Z"
             }
           ]
         }
