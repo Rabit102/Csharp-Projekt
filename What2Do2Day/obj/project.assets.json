@@ -8,23 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\noobe\\.nuget\\packages\\": {},
+    "C:\\Users\\cleme\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj",
+      "projectUniqueName": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj",
       "projectName": "What2Do2Day",
-      "projectPath": "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj",
-      "packagesPath": "C:\\Users\\noobe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\noobe\\Documents\\GitHub\\Csharp-Projekt\\What2Do2Day\\obj\\",
+      "projectPath": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\What2Do2Day\\What2Do2Day.csproj",
+      "packagesPath": "C:\\Users\\cleme\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cleme\\Desktop\\School\\Csharp\\Progs\\Csharp-Projekt\\What2Do2Day\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\noobe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cleme\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

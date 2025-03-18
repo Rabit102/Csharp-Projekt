@@ -175,7 +175,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IdleBlock", false);
         }
 
-        else if ((Input.GetKeyDown("left shift") || Input.GetKeyDown(KeyCode.DownArrow)) && !rolling)
+        else if (Input.GetKeyDown(KeyCode.DownArrow) && !rolling)
         {
             rollCurrentTime = 0;
             rolling = true;
@@ -253,6 +253,8 @@ public class PlayerMovement : MonoBehaviour
 
      public void hurt() // Schaden
      {
+        jumpForce = 7.5f;
+        speed = 4.0f;
         AudioCode.instance.PlaySound(hurtSound);
         animator.SetTrigger("Hurt");
         live--;

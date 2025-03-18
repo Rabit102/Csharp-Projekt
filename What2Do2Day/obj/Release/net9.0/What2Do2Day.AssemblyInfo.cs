@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("What2Do2Day")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffbe3f5db5809a25e0150367eb6fd9b5df70993a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01defaa5013f565d23bfec6c2f41868bcc039e37")]
 [assembly: System.Reflection.AssemblyProductAttribute("What2Do2Day")]
 [assembly: System.Reflection.AssemblyTitleAttribute("What2Do2Day")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

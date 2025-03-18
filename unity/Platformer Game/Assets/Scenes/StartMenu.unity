@@ -967,7 +967,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Knight Andventure
+  m_text: Knight Adventure
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1297,11 +1297,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7911694575923540555, guid: af506cc9c7e05294888e1657e10c333c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.66
+      value: -6.6
       objectReference: {fileID: 0}
     - target: {fileID: 7911694575923540555, guid: af506cc9c7e05294888e1657e10c333c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.27
+      value: -4.47
       objectReference: {fileID: 0}
     - target: {fileID: 7911694575923540555, guid: af506cc9c7e05294888e1657e10c333c, type: 3}
       propertyPath: m_LocalPosition.z

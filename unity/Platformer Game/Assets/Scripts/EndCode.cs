@@ -5,6 +5,7 @@ public class EndCode : MonoBehaviour
 {
     [SerializeField] AudioClip collectedSound;
     public LevelManagerCode level;
+    public HighscoreCode highscoreCode;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +15,7 @@ public class EndCode : MonoBehaviour
             level.unlocked = true;
             AudioCode.instance.PlaySound(collectedSound);
             SceneManager.LoadScene("LevelAuswahl");
+            highscoreCode.Highscore();
         }
     }
 }
